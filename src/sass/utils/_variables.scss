@@ -1,0 +1,31 @@
+:root {
+    --primary-text-color:#B9B9B9;
+    --second-text-color: #111518;
+    --third-text-color: #FFFFFF;
+    --fourth-text-color: #3D3D3D;
+
+    --accent-color: #FF6B09;
+
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #111518;
+    --third-background-color: #F1F1F1;
+    --background-filter-button: #F5F4FA;
+   
+}
+
+    $mobile: 480px;
+    $tablet: 768px;
+    $desktop: 1366px;
+    
+
+body {
+
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+    

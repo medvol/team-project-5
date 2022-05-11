@@ -1,0 +1,23 @@
+.btn {
+    
+    min-width: 336px;
+    min-height: 70px;
+    margin: auto;
+    padding: 26px 24px;
+
+    border: none;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: var(--third-text-color);
+     
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+}

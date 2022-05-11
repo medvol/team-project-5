@@ -1,0 +1,42 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+    }
+
+}
