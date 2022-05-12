@@ -1,3 +1,11 @@
+
+@media screen and (min-width: 768px) {
+    .about {
+        display: flex;
+    }
+}
+
+
 .about__title {
     font-weight: 800;
 font-size: 20px;
@@ -12,9 +20,10 @@ font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.08em;
 color: #111518;
+padding-bottom: 8px;
 }
 
-.about__image {
+.about__title-image {
     border-bottom: 1px solid #B9B9B9;
 }
 
@@ -25,8 +34,6 @@ line-height: 17px;
 letter-spacing: 0.06em;
 color: var(--second-text-color);
 }
-
-
 
 
 .about__experience-list{
@@ -44,7 +51,7 @@ color: var(--second-text-color);
     padding-bottom: 20px;
 }
 
-.about__content::after{
+.about__experience::after{
     content: '';
     display: block;
     height: 2px;
@@ -53,6 +60,9 @@ color: var(--second-text-color);
     background-color: var(--accent-color);
 }
 
+.about__experience {
+padding-bottom: 20px;
+}
 .education__exile-license {
     font-weight: 500;
 font-size: 12px;
