@@ -1,16 +1,22 @@
 .problem-baner {
+    position: relative;
     background-color: rgba(17, 21, 24, 1);
     text-align: left;
     height: 545px;
 
     @media screen and (min-width: $tablet) {
-        height: 470px;
+    height: 470px;
     }
 
     @media screen and (min-width: $desktop) {
-        height: 560px;
-    }
+    height: 560px;
+    background-image: url(/images/noun_campfir.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}        
 }
+
 
 .problem-title {
     display: inline-block;
@@ -19,41 +25,81 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 130%;
-    /* or 31px */
-
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
 
     @media screen and (min-width: $tablet) {
-        padding-left: 15px;
-        width: 568px;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 130%;
-        /* or 31px */
-
-        letter-spacing: 0.03em;
-
-        color: #FFFFFF;
+    padding-left: 15px;
+    width: 568px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
     }
 
     @media screen and (min-width: $desktop) {
-        padding-left: 0;
-        width: 866px;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 46px;
-        line-height: 130%;
-        /* or 60px */
-
-        letter-spacing: 0.03em;
-
-        color: #FFFFFF;
+    padding-left: 0;
+    width: 866px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
     }
 }
 
 .problem-title__accent {
-        color: #FF6B09;
+    color: #FF6B09;
+}
+.problem {
+    position: relative;
+}
+.problem-numbers {
+    position: absolute;
+    top: 338px;
+    left: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:auto;
+    margin-left: auto;
+    background-color: #FFFFFF;
+    box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
+    width: 280px;
+    @media screen and (min-width: $tablet) {
+    width: 704px;
+    }
+    @media screen and (min-width: $desktop) {
+    width: 1648px;
+    height: 354px;
+    }
+
+}
+
+.problem-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    // width: 1648px;
+    // height: 354px;
+    // padding-top: 60px;
+    // margin-top: calc(-1*30px);
+    // margin-left: calc(-1*30px);
+}
+
+.problem-list__item {
+    flex-basis: calc(100%/3 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #111518;
 }
