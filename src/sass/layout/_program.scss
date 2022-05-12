@@ -1,0 +1,104 @@
+.program {
+    background: var(--secondary-background-color);
+}
+.program__title {
+    text-align: center;
+    margin: 40px 0 40px 0;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.30;
+    letter-spacing: 0.03em;
+    
+    color: var(--third-text-color);
+}
+.program__container {
+    display: flex;
+    justify-content: center;
+}
+.program__semester {
+
+    &:before {
+            content: '';
+            position: absolute;
+            top: 160px;
+            bottom: -750px;
+            transform: translate(-20px, 0);
+            border-left: 1px solid var(--third-text-color);
+        }
+    
+}
+.program__list {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.program__list-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    text-transform: uppercase;
+    
+    color: var(--third-text-color);
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 7.5px;
+        background-color: var(--accent-color);
+
+        transform: translate(-25px, 0);
+        
+    }
+}
+.program__group-list {
+    line-height: 1.65;
+}
+.program__catalog-title {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 4px;
+    
+    font-weight: 700;
+    font-size: 12px;
+    
+    color: var(--accent-color);
+
+    &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 1px;
+        margin-right: 5px;
+        background-color: var(--accent-color);
+    }
+}
+.program__catalog {
+    margin-bottom: 4px;
+    &:last-child {
+            margin-bottom: 0;
+        }
+}
+.program__catalog-list {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 734px) and (max-width: 1679px) {
+    
+    .program__title {
+        text-align: left;
+        font-size: 26px;
+    }
+    .program__group-list {
+        display: flex;
+    }
+}
