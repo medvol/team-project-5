@@ -1,8 +1,8 @@
-// .contacts-section {
-// padding-top: 200px;
-// padding-bottom: 200px;
-// background: var(--bg-color);
-// text-align: center;
+.contacts-section {
+padding-top: 200px;
+padding-bottom: 200px;
+background: var(--secondary-background-color);
+text-align: center;
 // background-image: linear-gradient(to right,
 //     rgba(47, 48, 58, 0.4),
 //     rgba(47, 48, 58, 0.4)), 
@@ -10,4 +10,38 @@
 // background-repeat: no-repeat;
 // background-position: center;
 // background-size: cover;
-// }
+}
+
+.contacts-title {
+    font-size: 14px;
+    text-align: center;
+    color: var(--third-text-color);
+
+    @media screen and (min-width:$tablet) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width:$desctop) {
+        font-size: 46px;
+    }
+}
+.contacts-text {
+    @media screen and (min-width:$tablet) {
+            font-size: 14px;
+            line-height: 1.21;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            font-size: 30px;
+            line-height: 1.23;
+        }
+}
+.contacts-spun { 
+    color: var(--accent-color)
+}
+
+.contacts__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
