@@ -21,6 +21,13 @@ padding-bottom: 80px;
 // background-size: cover;
 }
 
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contacts-title {
     font-size: 14px;
     text-align: center;
@@ -35,7 +42,11 @@ padding-bottom: 80px;
     }
 }
 .contacts-text {
+    margin-top: 24px;
+    color: var(--third-text-color);
+
     @media screen and (min-width:$tablet) {
+        margin-top: 40px;
             font-size: 14px;
             line-height: 1.21;
         }
@@ -50,6 +61,7 @@ padding-bottom: 80px;
 }
 
 .contacts__subscribe-form {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -58,13 +70,65 @@ padding-bottom: 80px;
     width: 280px;
     }
     @media screen and (min-width:$tablet) {
+        margin-top: 24px;
     width: 336px;
     }
     @media screen and (min-width:$desktop) {
+        margin-top: 60px;
     width: 528px;
     }
 }
 
-.modal-imput {
+.subscribe-input {
+    height: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: transparent;
+    color: var(--third-text-color);
+    border: 1px solid var(--third-text-color);
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+    
+    @media screen and (min-width:$tablet) {
+    padding-left: 24px;
+    padding-right: 24px;
+    }
+    
+    @media screen and (min-width:$desktop) {
     height: 70px;
+    &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+  &::placeholder {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--third-text-color);
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid var(--accent-color);
+
+  }
+}
+
+.subscribe__button {
+    height: 48px;
+    color: var(--third-text-color);
+    background: var(--accent-color);
+    text-transform: uppercase;
+    margin-top: 40px;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 32px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        height: 70px;
+        margin-top: 40px;
+    }
 }
