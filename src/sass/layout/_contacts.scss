@@ -1,8 +1,17 @@
 .contacts-section {
-padding-top: 200px;
-padding-bottom: 200px;
+padding-top: 40px;
+padding-bottom: 40px;
 background: var(--secondary-background-color);
 text-align: center;
+
+@media screen and (min-width:$tablet) {
+
+}
+
+@media screen and (min-width:$desktop) {
+padding-top: 80px;
+padding-bottom: 80px;
+}
 // background-image: linear-gradient(to right,
 //     rgba(47, 48, 58, 0.4),
 //     rgba(47, 48, 58, 0.4)), 
@@ -21,7 +30,7 @@ text-align: center;
         font-size: 26px;
     }
 
-    @media screen and (min-width:$desctop) {
+    @media screen and (min-width:$desktop) {
         font-size: 46px;
     }
 }
@@ -31,9 +40,9 @@ text-align: center;
             line-height: 1.21;
         }
     
-        @media screen and (min-width:$desktop) {
-            font-size: 30px;
-            line-height: 1.23;
+    @media screen and (min-width:$desktop) {
+           font-size: 30px;
+           line-height: 1.23;
         }
 }
 .contacts-spun { 
@@ -44,4 +53,18 @@ text-align: center;
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media screen and (min-width:$mobile) {
+    width: 280px;
+    }
+    @media screen and (min-width:$tablet) {
+    width: 336px;
+    }
+    @media screen and (min-width:$desktop) {
+    width: 528px;
+    }
+}
+
+.modal-imput {
+    height: 70px;
 }
