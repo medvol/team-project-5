@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --primary-text-color:#B9B9B9;
+  --second-text-color: #111518;
+  --third-text-color: #FFFFFF;
+  --fourth-text-color: #3D3D3D;
+  --accent-color: #FF6B09;
+  --primary-background-color: #FFFFFF;
+  --secondary-background-color: #111518;
+  --third-background-color: #F1F1F1;
+  --background-filter-button: #F5F4FA;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1366px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 1680px;
+  }
+}
+
+.btn {
+  min-width: 336px;
+  min-height: 70px;
+  margin: auto;
+  padding: 26px 24px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.title--white {
+  color: var(--third-text-color);
+}
+
+.advantages-container-first::before {
+  position: relative;
+  display: inline-block;
+  content: '';
+  background-image: url(/images/noun-female.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 33px;
+  height: 40px;
+  border: 2px solid var(--accent-color);
+  padding: 10px 13px;
+}
+
+.advantages-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: var(--third-text-color);
+  height: 46px;
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 65px;
+}
+/*# sourceMappingURL=main.css.map */

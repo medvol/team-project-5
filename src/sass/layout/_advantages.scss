@@ -1,0 +1,126 @@
+.advantages-item{
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.advantages-container-first::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-image: url(/images/noun-female-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 60px;
+    border: 2px solid var(--accent-color);
+    padding: 10px 13px;
+}
+.advantages-text-first {
+    position: absolute;
+    left: 47px;
+    top: 8px;
+}
+
+.advantages-container-second::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-image: url(/images/noun-mobile-learning-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 60px;
+    border: 2px solid var(--accent-color);
+    padding: 10px 8px;
+}
+.advantages-text-secondary {
+    position: absolute;
+    display: flex;
+    left: 49px;
+    top: 8px;
+}
+.advantages-text {
+    display: flex;
+    color: var(--second-text-color);
+    background-color: var(--third-text-color);
+    height: 46px;
+    font-weight: 700;
+    line-height: 1.65;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 34px;
+}
+
+.advantages-container-third::before {
+    position: relative;
+    display: inline-block;
+    content: '';
+    background-image: url(/images/noun-insurance-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 60px;
+    border: 2px solid var(--accent-color);
+    padding: 10px 12px;
+}
+
+.advantages-text-third {
+    position: absolute;
+    display: flex;
+    left: 49px;
+    top: 8px;
+}
+@media screen and (min-width: $tablet) {
+
+    .advantages-list {
+        display: flex;
+    }
+    .advantages-item {
+    margin-right: 21px;
+    &:not(:last-child){
+        margin-bottom: 0 ;
+    }
+}
+.advantage-container{
+    width: 216px;
+}
+.advantages-text-first {
+    height: 47px;
+    padding-right: 0;
+    padding-left: 23px;
+    left: 47px;
+    top: 7px;
+}
+}
+
+
+// .advantages-item-container {
+//     width: 366px;
+// }
+
+// .advantages-item-container-first::before {
+//     position: relative;
+//     display: inline-block;
+//     content: '';
+//     background-image: 
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     width: 40px;
+//     height: 48px;
+//     border: 2px solid #FF6B09;
+//     padding: 20px;
+// }
+
+// .advantages-text {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     background-color: white;
+//     height: 66px;
+//     position: absolute;
+//     left: 80px;
+//     top: 20px;
+//     align-items: center;
+//     padding-right: 150px;
+// }
