@@ -14,6 +14,18 @@ letter-spacing: 0.03em;
 color: #111518;
 }
 
+
+    @media screen and (min-width: 768px) {
+        .about__image {
+            padding-right: 61px;
+            padding-left: 20px;
+            padding-top: 0%;
+        }
+        .about__title {
+            padding-top: 0px;
+        }
+    }
+
 .about__title-image {
 font-weight: 800;
 font-size: 20px;
@@ -71,7 +83,7 @@ text-decoration-line: underline;
 color: #FF6B09;
 }
 
-.about__education {
+.education__exile {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -79,7 +91,30 @@ color: #FF6B09;
     color: #B9B9B9;
     }
 
+    .exile-padding {
+        padding-bottom: 8px;
+      }
+
+      @media screen and (min-width: 768px) {
+        .exile-padding {
+            padding-bottom: 24px;
+          }
+        }
+
+    @media screen and (min-width: 768px) {
+        .education__exile {
+            font-size: 10px;
+            line-height: 2.0;
+    }
+    }
+
 
 .padding-mobile {
     padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .about__experience-list {
+    margin: 20px;
+}
 }
