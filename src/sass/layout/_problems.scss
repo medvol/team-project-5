@@ -1,6 +1,10 @@
 .problem-baner {
     position: relative;
-    background-color: rgba(17, 21, 24, 1);
+    // background-color: rgba(17, 21, 24, 1);
+
+    background-image: linear-gradient(to bottom, rgba(17, 21, 24, 1), rgba(241, 242, 245, 0.4));
+
+    
     text-align: left;
     height: 545px;
 
@@ -10,7 +14,7 @@
 
     @media screen and (min-width: $desktop) {
     height: 560px;
-    background-image: url(/images/noun_campfir.svg);
+    background-image: url(/images/noun_campfir.svg), linear-gradient(to bottom, rgba(17, 21, 24, 1), rgba(241, 242, 245, 0.4));;
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
@@ -29,7 +33,6 @@
     color: #FFFFFF;
 
     @media screen and (min-width: $tablet) {
-    padding-left: 15px;
     width: 568px;
     font-style: normal;
     font-weight: 800;
@@ -40,7 +43,6 @@
     }
 
     @media screen and (min-width: $desktop) {
-    padding-left: 0;
     width: 866px;
     font-style: normal;
     font-weight: 800;
@@ -55,51 +57,126 @@
     color: #FF6B09;
 }
 .problem {
-    position: relative;
-}
-.problem-numbers {
-    position: absolute;
-    top: 338px;
-    left: 155px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right:auto;
-    margin-left: auto;
-    background-color: #FFFFFF;
-    box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
-    width: 280px;
-    @media screen and (min-width: $tablet) {
-    width: 704px;
-    }
-    @media screen and (min-width: $desktop) {
-    width: 1648px;
-    height: 354px;
-    }
-
+    padding-bottom: 132px;
 }
 
 .problem-list {
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    // width: 1648px;
-    // height: 354px;
-    // padding-top: 60px;
-    // margin-top: calc(-1*30px);
-    // margin-left: calc(-1*30px);
+    position: absolute;
+    
+    
+        @media screen and (min-width: $mobile) {
+            top: 230px;
+            width: 280px;
+            right: 15px;
+            padding-top: 20px;
+            padding-right: 12px;
+            padding-bottom: 24px;
+            padding-left: 20px;
+    
+        }
+    
+        @media screen and (min-width: $tablet) {
+            top: 200px;
+            right: 32px;
+            width: 670px;
+            padding-top: 32px;
+            padding-right: 80px;
+            padding-bottom: 32px;
+            padding-left: 80px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            top: 338px;
+            left: 15px;
+            width: 1648px;
+            padding-top: 60px;
+            padding-right: 192px;
+            padding-bottom: 60px;
+            padding-left: 140px;
+    
+        }
+    
+        box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
+        background-color: #FFFFFF;
 }
 
 .problem-list__item {
-    flex-basis: calc(100%/3 - 30px);
-        margin-left: 30px;
-        margin-top: 30px;
-    
-    font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.08em;
-    color: #111518;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        color: #111518;
+
+    @media screen and (min-width: $tablet) {
+    width: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+    width: calc(100%/3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    font-style: normal;
 }
+}
+
+// .problem-list__item {
+//     counter-reset:;
+// }
+
+// .problem-list__item::before {
+
+// }
+
+// .problem-numbers {
+    // position: absolute;
+    // top: 338px;
+    // left: 15px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // // margin-right:auto;
+    // // margin-left: auto;
+    // background-color: #FFFFFF;
+    // box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
+    // width: 280px;
+    // @media screen and (min-width: $tablet) {
+    // width: 704px;
+    // }
+    // @media screen and (min-width: $desktop) {
+    // width: 1648px;
+    // height: 354px;
+    
+    // }
+
+// }
+
+// .problem-list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     // width: 1648px;
+//     // height: 354px;
+//     // padding-top: 60px;
+//     // margin-top: calc(-1*30px);
+//     // margin-left: calc(-1*30px);
+// }
+
+// .problem-list__item {
+//     flex-basis: calc(100%/3 - 30px);
+//     // width: 336px;
+//     margin-left: 30px;
+//     margin-top: 30px;
+    
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 24px;
+//     letter-spacing: 0.08em;
+//     color: #111518;
+// }
