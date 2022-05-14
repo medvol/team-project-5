@@ -29,7 +29,7 @@
         font-size: 24px;
         line-height: 31px;
         letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: var(--third-text-color);
         
     
         @media screen and (min-width: $tablet) {
@@ -39,7 +39,7 @@
         font-size: 24px;
         line-height: 31px;
         letter-spacing: 0.03em;
-        color: #FFFFFF;;
+        color: var(--third-text-color);
         }
     
         @media screen and (min-width: $desktop) {
@@ -49,12 +49,12 @@
         font-size: 46px;
         line-height: 60px;
         letter-spacing: 0.03em;
-        color:#FFFFFF;
+        color:var(--third-text-color);
         }
     }
 
 .problem-title__accent {
-        color: #FF6B09;
+        color: var(--accent-color);
             }
 
 .problem-list {
@@ -87,7 +87,7 @@
             }
 
         box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
-        background-color: #FFFFFF;
+        background-color: var(--third-text-color);
         counter-reset: number 0;
     }
 
@@ -103,7 +103,7 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.08em;
-        color: #111518;
+        color: var(--second-text-color);
         
         @media screen and (min-width: $desktop){
         font-weight: 700;
@@ -129,7 +129,7 @@
             font-size: 15px;
             line-height: 18px;
             letter-spacing: 0.08em;
-            color: #FF6B09;
+            color: var(--accent-color);
            
             @media screen and (min-width: $desktop) {
             top: -30px;
@@ -138,7 +138,7 @@
             line-height: 24px;
         
                 letter-spacing: 0.08em;
-                color: #FF6B09;
+                color: var(--accent-color);
             }
 
             @media screen and (min-width: $desktop){
@@ -148,7 +148,7 @@
             line-height: 33px;
 
             letter-spacing: 0.08em;
-            color: #FF6B09;    
+            color: var(--accent-color);    
         }
     }
     }
