@@ -1,18 +1,18 @@
 .response {
     padding-left: 20px;
     padding-right: 20px;
+
     @media screen and (min-width: $tablet) {
         display: flex;
-        justify-content: space-between;
+        
         padding: 40px 50px;
-        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        
     }
 
     @media screen and (min-width: $desktop) {
         padding: 60px 112px 60px 80px;
         max-width: 1088px;
-        margin-left: auto;
-        margin-right: auto;
+       
     }
 }
 
@@ -24,6 +24,11 @@
     @media screen and (min-width: $tablet) {
         font-size: 26px;
        
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+        
     }
 }
 
@@ -161,3 +166,96 @@
     display: inline;
 }
 
+.slider {
+    position: relative;
+
+    @media screen and (min-width:$desktop) {
+       max-width: 1088px;
+       margin-left: auto;
+       margin-right: auto;
+        
+    }
+}
+
+.slick-list {
+    overflow: hidden;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    font-size: 0;
+    padding: 0;
+    width: 30px;
+    height: 25px;
+    border: none;
+
+}
+
+.slick-arrow.slick-prev {
+    left: 4px;
+    background: url(/images/arrow-left-reviews.svg);
+    background-repeat: no-repeat;
+
+    @media screen and (min-width:$desktop) {
+        left: -57px;
+        
+    }
+}
+
+.slick-arrow.slick-next {
+    right: 4px;
+    background: url(/images/arrow-right-reviews.svg);
+    background-repeat: no-repeat;
+
+    @media screen and (min-width:$desktop) {
+        right: -57px;
+    
+        }
+
+}
+
+/* Точки (булиты) */
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    @media screen and (min-width: $tablet) and (max-width: 1679px) {
+        margin-top: 20px;
+        
+    }
+
+}
+
+.slick-dots li:not(:last-child) {
+    
+    margin-right: 32px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+    border: 1px solid var(--accent-color);
+  
+}
+
+/* Элемент точки */
+.slick-dots li button {
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    border-radius: 50%;
+    
+    background: url(/images/reviews-1.jpg);
+
+}
