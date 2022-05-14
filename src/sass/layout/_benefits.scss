@@ -1,5 +1,5 @@
 
-// .benefits {
+// .benefits__section {
 //     position: absolute;
 //     top: 5097px;
 // }
@@ -17,23 +17,16 @@
     color: var(--second-text-color);
     background-color: var(--primary-background-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    counter-reset: text;
 }
 
-.benefits__subtitle {
-    position: relative;
+.benefits__text::before {
+    counter-increment: text;
+    content: "— 0" counter(text);
+    display: block;
     margin-bottom: 8px;
-    padding-left: 20px;
     color: var(--accent-color);
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 12px;
-        left: 0;
-        width: 14px;
-        height: 2px;
-        background-color: var(--accent-color);
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -45,7 +38,7 @@
 
 @media screen and (min-width: $tablet) {
 
-    // .benefits {
+    // .benefits__section {
     //     top: 3570px;
     // }
 
@@ -59,16 +52,18 @@
         min-width: 688px;
         display: flex;
         flex-wrap: wrap;
-        gap: 44px;
-        justify-content: space-between;
-        padding: 40px 92px;
+        column-gap: 32px;
+        row-gap: 44px;
+
+        padding: 40px 112px 40px 92px;
     }
 
     .benefits__item {
         flex-basis: calc(100% / 2 - 32px);
+        flex-grow: 1;
     }
 
-    .benefits__subtitle {
+    .benefits__text::before {
         line-height: 1.64;
     }
 
@@ -79,7 +74,7 @@
 
 @media screen and (min-width: $desktop) {
 
-    // .benefits {
+    // .benefits__section {
     //     top: 4139px;
     // }
 
@@ -88,18 +83,14 @@
     }
 
     .benefits__list {
-        min-width: 1648px;
-        gap: 72px;
+        row-gap: 40px;
+        column-gap: 204px;
         font-size: 20px;
-        padding: 60px 192px 60px 140px;
+        padding: 60px 32px 60px 140px;
     }
 
     .benefits__item {
-        flex-basis: calc(100% / 4);
-    }
-
-    .benefits__subtitle::before {
-        top: 17px;
+        flex-basis: calc(100% / 3 - 204px);
     }
 
     .benefits__text {
