@@ -6,24 +6,40 @@
   display: none;
 }
 
+.logo__icon-dark-tablet{
+  display: none;
+}
+
+.logo__icon-light-tablet{
+  display: none;
+}
+
 .header {
   position: relative;
-  padding-top: 20px;
   background-color: var(--primary-background-color);
 }
 
 .header__container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  padding-top: 20px;
 }
-
+.logo{
+  display: inline-block;
+  line-height: 0;
+}
 .burger-btn{
+  position: absolute;
+  top: 26px;
+  right: 20px;
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger__icon{
+  fill: black;
 }
 
 .burger-btn:hover .burger__icon,
@@ -59,12 +75,12 @@
 
 .mobile-menu__wrapper{
   margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .mobile-menu__close-btn{
+  position: absolute;
+  top: 23px;
+  right: 22px;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -72,7 +88,6 @@
 }
 
 .mobile-menu__close-btn-icon{
-  fill: var(--primary-background-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -101,41 +116,8 @@
   background-color: var(--accent-color);
 }
 
-.logo {
-  display: block;
-  font-weight: 700;
-  font-size: 5px;
-  line-height: 1.2;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--second-text-color);
-}
-
 .logo__mobile-menu {
   color: var(--primary-background-color);
-}
-
-.logo__accent {
-  color: var(--accent-color);
-}
-
-.logo__bolt {
-  font-weight: 800;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-}
-
-.logo__img::after{
-  content: '';
-  display: inline-block;
-  width: 14px;
-  height: 19px;
-  margin-left: 4px;
-  margin-right: 4px;
-  background-image: url(/images/fire-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
 }
 
 .mobile-meny__link{
@@ -167,30 +149,40 @@
 }
 
 @media screen and (min-width:$tablet) {
+  .logo__icon-dark-mobile{
+    display: none;
+  }
+
+  .logo__icon-light-mobile{
+    display: none;
+  }
+
+  .logo__icon-dark-tablet {
+      display: block;
+      margin: 0;
+    }
+  
+  .logo__icon-light-tablet {
+    display: block;
+  }
+
   .mobile-menu__modal-btn{
     display: none;
   }
+
+  .burger-btn {
+    top: 59px;
+    right: 32px;
+  }
+
   .header__container {
-    justify-content: start;
+    display: flex;
+    padding: 40px 32px 0;
+    align-items: center;
   }
 
   .mobile-menu__conteiner {
     padding: 40px 32px;
-  }
-
-  .logo{
-    font-size: 8px;
-  }
-
-  .logo__bolt{
-    font-size: 26px;
-  }
-
-  .logo__img::after {
-    content: '';
-    width: 22px;
-    height: 30px;
-    background-image: url(/images/fire-tablet.svg);
   }
 
   .modal-btn {
@@ -198,13 +190,20 @@
     min-height: 48px;
     min-width: 260px;
     padding: 15px 5px 16px;
-    margin: 0;
+    margin-right: 40px;
     margin-left: auto;
-  }
-  .burger-btn{
-    margin-left: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .modal-btn:hover,
+  .modal-btn:focus{
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
+  }
+  .mobile-menu__close-btn {
+    top: 56px;
+    right: 32px;
+  }
   .mobile-menu__nav-list{
     display: flex;
     flex-direction: column;
@@ -249,13 +248,6 @@
     min-height: 70px;
     margin: 0;
     padding: 26px 24px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .modal-btn:hover,
-  .modal-btn:focus{
-    color: var(--third-text-color);
-    background-color: var(--accent-color);
   }
 }
 
