@@ -1,212 +1,227 @@
 .problem-baner {
-    position: relative;
-    // background-color: rgba(17, 21, 24, 1);
-
-    background-image: linear-gradient(to bottom, rgba(17, 21, 24, 1), rgba(241, 242, 245, 0.4));
-
-    
-    text-align: left;
-    height: 545px;
-
-    @media screen and (min-width: $tablet) {
-    height: 470px;
+        
+        position: relative;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.4));
+        min-height: 545px;
+        @media screen and (min-width: $tablet) {
+        min-height: 340px;
+        }
+        @media screen and (min-width: $desktop) {
+        min-height: 560px;
+        background-image: url(/images/noun_campfir.svg), linear-gradient(to bottom, rgba(17, 21, 24, 1), rgba(241, 242, 245, 0.4));;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+    }  
+        margin-bottom: 157px;
+        @media screen and (min-width: $tablet){
+        padding-bottom: 129px;
     }
-
-    @media screen and (min-width: $desktop) {
-    height: 560px;
-    background-image: url(/images/noun_campfir.svg), linear-gradient(to bottom, rgba(17, 21, 24, 1), rgba(241, 242, 245, 0.4));;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-}        
+        @media screen and (min-width: $desktop){
+        margin-bottom: 132px;      
+    }
 }
-
 
 .problem-title {
-    display: inline-block;
-    padding-top: 80px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-
-    @media screen and (min-width: $tablet) {
-    width: 568px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    }
-
-    @media screen and (min-width: $desktop) {
-    width: 866px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 46px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    }
-}
-
-.problem-title__accent {
-    color: #FF6B09;
-}
-.problem {
-    padding-bottom: 350px;
-    @media screen and (min-width: $tablet){
-    padding-bottom: 200px;
-    }
-    @media screen and (min-width: $desktop){
-    padding-bottom: 132px;
-    }
-
-
-}
-
-.problem-list {
-    
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-    
-        @media screen and (min-width: $mobile) {
-            top: 230px;
-            width: 280px;
-            right: 15px;
-            // margin-left: auto;
-            // margin-right: 15px;
-            padding-top: 20px;
-            padding-right: 12px;
-            padding-bottom: 24px;
-            padding-left: 20px;
-    
-        }
+        width: 280px;
+        padding-top: 24px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        
     
         @media screen and (min-width: $tablet) {
-            top: 200px;
-            left: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 670px;
-            padding-top: 32px;
-            padding-right: 80px;
-            padding-bottom: 32px;
-            padding-left: 80px;
+        padding-top: 40px;
+        width: 428px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;;
         }
     
         @media screen and (min-width: $desktop) {
-            top: 338px;
-            left: 15px;
-            width: 1648px;
-            padding-top: 60px;
-            padding-right: 192px;
-            padding-bottom: 60px;
-            padding-left: 140px;
-    
+        padding-top: 80px;
+        width: 866px;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 60px;
+        letter-spacing: 0.03em;
+        color:#FFFFFF;
         }
-    
+    }
+
+.problem-title__accent {
+        color: #FF6B09;
+            }
+
+.problem-list {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 12px 24px 32px;
+        top: 203px;
+        width: 280px;
+        
+        
+        @media screen and (min-width: $mobile) {
+        top: 203px;
+        width: 280px;
+    }
+
+        @media screen and (min-width: $tablet) {
+        top: 169px;
+        width: 704px;
+        padding: 32px 80px;
+                
+    }
+
+        @media screen and (min-width: $desktop) {
+        top: 338px;    
+        width: 1648px;   
+        padding: 60px 192px 60px 140px;
+               
+
+            }
+
         box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
         background-color: #FFFFFF;
         counter-reset: number 0;
+    }
+
+.problem-list__item:not(:last-child) {
+    
+        margin-bottom: 45px;
+    
 }
 
 .problem-list__item {
-    position: relative;
-    font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
+        position: relative;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
         letter-spacing: 0.08em;
         color: #111518;
-        margin-top: 50px;
-
-    @media screen and (min-width: $tablet) {
-    width: calc(100%/2 - 30px);
-    margin-left: 30px;
-    margin-top: 50px;
-    }
-
-    @media screen and (min-width: $desktop) {
-    width: calc(100%/3 - 30px);
-    margin-left: 30px;
-    margin-top: 50px;
-    font-style: normal;
-}
-    counter-increment: number;
-    &::before {
-        content: "— " counter(number);
-        position: absolute;
-        top: -35px;
-        font-weight: 700;
-            font-size: 20px;
-            line-height: 164.9%;
         
+        @media screen and (min-width: $desktop){
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        }
+
+        @media screen and (min-width: $tablet) {
+        width: calc(100%/2 - 16px);
+     
+        }
+
+        @media screen and (min-width: $desktop) {
+        width: calc(100%/3 - 103px);
+        }  
+
+        counter-increment: number;
+        &::before {
+            content: "— " counter(number);
+            position: absolute;
+            top: -20px;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 18px;
             letter-spacing: 0.08em;
-        color: #FF6B09;    
+            color: #FF6B09;
+           
+            @media screen and (min-width: $desktop) {
+            top: -30px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+        
+                letter-spacing: 0.08em;
+                color: #FF6B09;
+            }
+
+            @media screen and (min-width: $desktop){
+            top: -40px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+
+            letter-spacing: 0.08em;
+            color: #FF6B09;    
+        }
     }
+    }
+
+.problem-list__item:nth-child(1) {
+    margin-top: 30px;
+    @media screen and (min-width: $mobile){
+    margin-top: 30px;
+    }
+
+    @media screen and (min-width: $tablet){
+    margin-right: 32px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+    }
+
+    @media screen and (min-width: $desktop){
     
+    margin-right: 85px;
+    margin-bottom: 0;
+    }
 }
+.problem-list__item:nth-child(2) {
+    @media screen and (min-width: $tablet) {
+    margin-bottom: 39px;
+    margin-top: 39px;
+    }
 
-// .problem-list__item {
-//     counter-reset:;
-// }
+    @media screen and (min-width: $desktop){
+    margin-top: 40px;
+    margin-right: 223px;
+    margin-bottom: 0;
+}
+}
+.problem-list__item:nth-child(3) {
+    @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+    margin-bottom: 38px;
+    }
 
-// .problem-list__item::before {
+    @media screen and (min-width: $desktop){
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+}
+.problem-list__item:nth-child(4) {
+    @media screen and (min-width: $tablet) {
+    margin-bottom: 38px;
+    }
 
-// }
+    @media screen and (min-width: $desktop){
+    margin-right: 85px;
+    margin-top: 98px;
+    margin-bottom: 0;
+}
+}
+.problem-list__item:nth-child(5) {
+    @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+    margin-bottom: 0;
+    }
 
-// .problem-numbers {
-    // position: absolute;
-    // top: 338px;
-    // left: 15px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // // margin-right:auto;
-    // // margin-left: auto;
-    // background-color: #FFFFFF;
-    // box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
-    // width: 280px;
-    // @media screen and (min-width: $tablet) {
-    // width: 704px;
-    // }
-    // @media screen and (min-width: $desktop) {
-    // width: 1648px;
-    // height: 354px;
-    
-    // }
+    @media screen and (min-width: $desktop){
+    margin-right: 223px;
+    margin-top: 98px;
+    margin-bottom: 0; 
+}
+}
+.problem-list__item:nth-child(6) {
+    @media screen and (min-width: $tablet) {}
 
-// }
-
-// .problem-list {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//     // width: 1648px;
-//     // height: 354px;
-//     // padding-top: 60px;
-//     // margin-top: calc(-1*30px);
-//     // margin-left: calc(-1*30px);
-// }
-
-// .problem-list__item {
-//     flex-basis: calc(100%/3 - 30px);
-//     // width: 336px;
-//     margin-left: 30px;
-//     margin-top: 30px;
-    
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 20px;
-//     line-height: 24px;
-//     letter-spacing: 0.08em;
-//     color: #111518;
-// }
+    @media screen and (min-width: $desktop){
+    margin-top: 98px;
+}
+}
