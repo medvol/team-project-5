@@ -1,167 +1,113 @@
-.advantages-item{
-    position: relative;
-    &:not(:last-child){
-        margin-bottom: 30px;
-    }
-}
-.advantages-container-first::before {
-    display: inline-block;
-    content: '';
-    background-image: url(/images/noun-female-mobile.svg);
-    background-repeat: no-repeat;
-    background-position-x: 9px;
-    background-position-y: 8px;
-    width: 59px;
-    height: 60px;
-    border: 2px solid var(--accent-color);
-    padding: 10px 13px;
-}
-.advantages-text-first {
-    position: absolute;
-    left: 44px;
-    top: 8px;
-    padding-left: 25px;
-}
 
-.advantages-container-second::before {
-    display: inline-block;
+.advantages-list__item {
+display: flex;
+width: 100%;
+&:not(:last-child){
+    margin-bottom: 30px;
+}
+}
+.advantages-list_item_first::before {
+    display: block;
     content: '';
-    background-image: url(/images/noun-mobile-learning-mobile.svg);
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 8px;
-    width: 59px;
-    height: 60px;
-    border: 2px solid var(--accent-color);
-    padding: 10px 8px;
-}
-.advantages-text-secondary {
-    position: absolute;
-    display: flex;
-    left: 49px;
-    top: 8px;
-    padding-left: 20px;
-}
-.advantages-text {
-    display: flex;
-    color: var(--second-text-color);
-    background-color: var(--third-text-color);
-    height: 46px;
-    font-weight: 700;
-    line-height: 1.65;
-    align-items: center;
-    // padding-left: 29px;
-    padding-right: 38px;
-}
-
-.advantages-container-third::before {
-    display: inline-block;
-    content: '';
-    background-image: url(/images/noun-insurance-mobile.svg);
+    background-image: url(/images/icon-female-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 59px;
     height: 60px;
-    border: 2px solid var(--accent-color);
-    padding: 10px 12px;
+    margin-right: 16px;
 }
 
-.advantages-text-third {
-    position: absolute;
-    display: flex;
-    left: 47px;
-    top: 8px;
-    padding-left: 24px;
+.advantages-list__item_second::before {
+    display: block;
+    content: '';
+    background-image: url(/images/icon-mobile-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 60px;
+    margin-right: 12px;
 }
+
+.advantages-list__item_third::before{
+    display: block;
+        content: '';
+        background-image: url(/images/icon-financial-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 59px;
+        height: 60px;
+        margin-right: 12px;
+    }
+        .advantages-list__text {
+            display: flex;
+            width: 209px;
+            padding-right: 30px;
+            color: var(--second-text-color);
+            font-weight: 700;
+            line-height: 1.65;
+            align-items: center;
+        }
+
 @media screen and (min-width: $tablet) {
 
     .advantages-list {
         display: flex;
+        justify-content: space-between;
     }
-    .advantages-item {
-    margin-right: 21px;
-    &:not(:last-child){
-        margin-bottom: 0 ;
+    .advantages-list__item {
+        flex-basis: auto;
+        &:not(:last-child) {
+    margin-bottom: 0;  
+    }
+}    
+    .advantages-list__text {
+        padding-right: 0;
+        width: 146px;
+    }
+    .advantages-list__item_first::before {
+        margin-right: 10px;
+        }
+    .advantages-list__item_second::before {
+        margin-right: 15px;
+    }
+    .advantages-list__item_second::before {
+        margin-right: 17px;
     }
 }
-        .advantages-container {
-            width: 215px;
-        }
-    
-        .advantages-text {
-            height: 47px;
-        }
-    
-        .advantages-text-first {
-            padding-right: 0;
-            padding-left: 23px;
-            left: 47px;
-            top: 7px;
-        }
-}
-
 @media screen and (min-width: $desktop){
-    .advantages-item:not(:last-child) {
+    .advantages-list__item{
+        position: relative;
+    
+    &:not(:last-child) {
         margin-right: 112px;
     }
-    .advantages-container {
-        width: 441px;
-    }
-    .advantages-container-first::before {
-        content: '';
-        background-image: url(/images/noun-female.svg);
-        background-position-x: 23px;
-        background-position-y: 25px ;
+}
+    .advantages-list_item_first::before {
+        background-image: url(/images/icon-female.svg);
         width: 100px;
         height: 102px;
-        padding-top: 27px;
-        padding-bottom: 27px;
-        padding-right: 35px;
-        padding-left: 25px;
+        margin: 0;
+        }
+    
+        .advantages-list__item_second::before {
+        background-image: url(/images/icon-mobile.svg);
+        width: 100px;
+        height: 102px;
+        margin: 0;
+        }
+    
+        .advantages-list__item_third::before {
+        background-image: url(/images/icon-financial.svg);
+        width: 100px;
+        height: 102px;
+        margin: 0;
+        }
+    .advantages-list__text {
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    padding-right: 135px;
+    width: 366px;
+    font-size: 20px;
     }
-    .advantages-text{
-        font-size: 20px;
-        height: 66px;
-        padding-right: 120px;
-    }
-    .advantages-text-first{
-        left: 65px;
-        top: 20px;
-        padding-left: 9px;
-    }
-        .advantages-container-second::before {
-            content: '';
-            background-image: url(/images/noun-mobile-learning.svg);
-            background-position-x: 20px;
-            background-position-y: 26px;
-            width: 100px;
-            height: 102px;
-            padding-top: 27px;
-            padding-bottom: 28px;
-            padding-right: 31px;
-            padding-left: 21px;
-        }
-        .advantages-text-secondary {
-            left: 69px;
-            top:20px;
-            padding-left: 13px;
-        }
-        .advantages-container-third::before {
-            content: '';
-            background-image: url(/images/noun-insurance.svg);
-            background-position-x: 22px;
-            background-position-y: 25px;
-            width: 100px;
-            height: 102px;
-            padding-top: 27px;
-            padding-bottom: 27px;
-            padding-right: 38px;
-            padding-left: 24px;
-        }
-        .advantages-text-third{
-            left: 66px;
-            top: 20px;
-            padding-left: 16px;
-        }
 }
-
