@@ -1,0 +1,34 @@
+.footer__contacts-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: var(--third-background-color);
+    text-align: center;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 86px;
+        padding-bottom: 80px;
+    }
+}
+.footer__copyright-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: var(--secondary-background-color);
+    text-align: center;
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 25px;
+        padding-bottom: 24px;
+        }
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 26px;
+        padding-bottom: 27px;
+    }
+}
+
+.copyright-section__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--primary-text-color);
+}

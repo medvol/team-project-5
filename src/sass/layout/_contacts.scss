@@ -4,21 +4,17 @@ padding-bottom: 40px;
 background: var(--secondary-background-color);
 text-align: center;
 
-@media screen and (min-width:$tablet) {
-
-}
-
 @media screen and (min-width:$desktop) {
 padding-top: 80px;
 padding-bottom: 80px;
 }
-background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), 
- url(/src/images/contact-mobile.jpg);
-background-repeat: no-repeat;
-background-position: center; 
-background-size: cover;
+// background-image: linear-gradient(to right,
+//     rgba(47, 48, 58, 0.4),
+//     rgba(47, 48, 58, 0.4)), 
+//  url(/src/images/contact-mobile.jpg);
+// background-repeat: no-repeat;
+// background-position: center; 
+// background-size: cover;
 }
 
 .contacts-container {
@@ -113,6 +109,10 @@ background-size: cover;
     outline: none;
     border: 1px solid var(--accent-color);
 
+  }
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+      border: 2px solid red;
   }
 }
 
