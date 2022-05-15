@@ -177,14 +177,20 @@
     }
 }
 
-.slick-list {
+.slider .slick-list {
     overflow: hidden;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    @media screen and (min-width: $tablet) {
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        
+    }
+    
     
 }
 
 .slick-track {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider .slick-arrow {
@@ -199,6 +205,8 @@
     border: none;
 
 }
+
+
 
 .slick-arrow.slick-prev {
     left: 4px;
@@ -223,39 +231,83 @@
 
 }
 
-/* Точки (булиты) */
-.slick-dots {
+.slider-small {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 47px;
+    padding-right: 47px;
+
+    @media screen and (min-width:$tablet) {
+            max-width: 570px;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+
+    @media screen and (min-width:$desktop) {
+            max-width: 618px;
+          
+        }
+}
+
+.slider-small .slick-track {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    @media screen and (min-width: $tablet) and (max-width: 1679px) {
-        margin-top: 20px;
+}
+
+.slider-small .slick-slide {
+    width: 54px;
+       
+}
+
+.slider-small .slick-list {
+    overflow: hidden;
+    
+}
+
+.slider-small__item {
+    // display: flex;
+    // width: 54px;
+    // height: 54px;
+   
+    margin-right: 12px;
+   
+    @media screen and (min-width: $tablet) {
+        margin-right: 32px;
         
     }
 
-}
-
-.slick-dots li:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+             margin-right: 40px;
     
-    margin-right: 32px;
+    }
+    
 }
 
-/* Активная точка */
-.slick-dots li.slick-active button {
-    border: 1px solid var(--accent-color);
-  
-}
-
-/* Элемент точки */
-.slick-dots li button {
-    width: 54px;
-    height: 54px;
-    padding: 0;
-    font-size: 0;
-    border: none;
+.slider-small__image {
+        
     border-radius: 50%;
+   
+
+}
+ 
+.slider-small__item.slick-current .slider-small__image {
     
-    background: url(/images/reviews-1.jpg);
+    border: 2px solid var(--accent-color);
+
+}
+
+.slider-small .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    font-size: 0;
+    padding: 0;
+    width: 30px;
+    height: 25px;
+    border: none;
 
 }
