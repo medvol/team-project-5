@@ -8,6 +8,7 @@ $(document).ready(function () {
         pauseOnFocus: true,
         pauseOnHover: true,
         pauseOnDots: true,
+        touchTreshold: 10,
         
     });
 }); 
