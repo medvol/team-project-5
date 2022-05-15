@@ -1,0 +1,36 @@
+.section-guarantee__title{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+.guarantee-list{
+        position: relative;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 7px;
+    background-color: #F1F1F1;
+}
+.guarantee-list__item:not(:last-child){
+    padding-bottom: 24px;
+    border-left: 1px dashed #B9B9B9;
+}
+.guarantee-list__item{
+    // position: relative;
+}
+.guarantee-list__item::before{
+    display: block;
+    position: absolute;
+content: '';
+background-image: url(/images/campfire.svg);
+width: 15px;
+height: 20px;
+left: 1px;
+}
+.guarantee-list__text{
+    text-align: start;
+    color: #3D3D3D;
+    margin-left: 28px;
+    font-size: 12px;
+    line-height: 1.67;
+}
