@@ -11,16 +11,19 @@
     --third-background-color: #F1F1F1;
     --background-filter-button: #F5F4FA;
    
+    --animation: cubic-bezier(0.4, 0, 0.2, 1);
+    --time-animation: 250ms;
 }
 
     $mobile: 480px;
     $tablet: 768px;
-    $desktop: 1366px;
+    $desktop: 1680px;
     
 
 body {
 
     font-family: Montserrat, sans-serif;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
