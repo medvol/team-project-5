@@ -1,7 +1,13 @@
 .hero{
   padding-top: 90px;
+<<<<<<< HEAD
   padding-bottom: 40px;
   background-image: url(/images/hero-mob-bgi.png);
+=======
+  padding-bottom: 60px;
+  background-image: url(/images/hero-mob-bgi.png);
+  background-size: cover;
+>>>>>>> main
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 }
 
@@ -28,6 +34,7 @@
 }
 
 .hero__text__accent{
+  display: block;
   margin-bottom: 40px;
   font-weight: 700;
   color: var(--accent-color);
@@ -44,18 +51,23 @@
   line-height: 1.25;
   letter-spacing: 0.14em;
   transition: background-color var(--time-animation) var(--animation), box-shadow var(--time-animation) var(--animation);
-}
 
-.hero__btn:hover,
-.hero__btn:focus{
-  background-color: #ec640a;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus{
+    background-color: #ec640a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 @media screen and (min-width: $tablet){
   .hero {
+<<<<<<< HEAD
     padding-top: 166px;
     padding-bottom: 80px;
+=======
+    padding-top: 169px;
+    padding-bottom: 46px;
+>>>>>>> main
     background-image: url(/images/hero-tab-bgi.png);
   }
 
@@ -71,9 +83,8 @@
     align-items: flex-start;
   }
   .hero__left-side{
+    margin-left: 10px;
     flex-basis: 332px;
-    padding-left: 10px;
-    padding-top: 5px;
   }
 
   .hero__title {
@@ -97,7 +108,11 @@
 @media screen and (min-width: $desktop){
   .hero {
     padding-top: 150px;
+<<<<<<< HEAD
     padding-bottom: 46px;
+=======
+    padding-bottom: 6px;
+>>>>>>> main
     background-image: url(/images/hero-desk-bgi.png);
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -110,6 +125,7 @@
     flex-basis: 560px;
     padding: 0;
   }
+
   .hero__title {
     font-size: 58px;
   }
@@ -120,18 +136,14 @@
     line-height: 1.65;
   }
 
-  .hero__text-wrapper{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 48px;
-  }
-
   .hero__text {
     font-size: 20px;
     line-height: 1.57;
+    margin-bottom: 48px;
   }
   
   .hero__text__accent {
+    display: inline-block;
     margin-bottom: 0;
     font-size: 20px;
     color: var(--second-text-color);
