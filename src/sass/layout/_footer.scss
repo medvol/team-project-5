@@ -1,4 +1,5 @@
 .footer__contacts-section {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -8,16 +9,24 @@
 
     @media screen and (min-width:$tablet) {
         flex-direction: row;
-        padding-left: 32px;
-        padding-right: 32px;
+        justify-content: center;
         }
 
     @media screen and (min-width:$desktop) {
         padding-top: 86px;
         padding-bottom: 80px;
-        padding-left: 16px;
-        padding-right: 16px;
     }
+}
+
+.footer-logo {  
+    @media screen and (min-width:$tablet) {
+            position: absolute;
+            left: 32px;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            left: 16px;
+        }
 }
 
 .footer__copyright-section {
@@ -88,8 +97,6 @@
     background:
     url(/images/instagram-icon.svg);
     background-size: 40px 40px;
-    // fill: // radial-gradient(#FAE100 100%, #FADC04 100%, #FBCE0E 100%, #FCB720 100%, #FE9839 100%, #FF7950 100%, #FF1C74 100%, #6C1CD1 100%);
-    
 }
 
 
@@ -106,13 +113,6 @@
 }
 
 .contacts-list__item {
-    @media screen and (min-width:$tablet) {
-            
-        }
-    
-        @media screen and (min-width:$desktop) {
-            
-        }
         @media screen and (max-width:$tablet) {
             margin-top: 21px;
         }
