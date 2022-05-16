@@ -1,3 +1,10 @@
+@media screen and (min-width: 1680px) {
+    .about__main-container {
+        width: 1680px;
+        padding-left: 16px;
+    padding-right: 280px;
+    }
+}
 
 @media screen and (min-width: $tablet) {
     .about__main-container {
@@ -5,50 +12,38 @@
     }
 }
 
-    @media screen and (min-width: $desktop) {
-        .about {
-        padding-right: 280px;
-        }
-    }
-
 .about__title {
-font-weight: 800;
 font-size: 20px;
-letter-spacing: 0.03em;
-color: #111518;
-padding-bottom: 20px;
+margin-bottom: 20px;
 }
 
 
     @media screen and (min-width: $tablet) {
         .about__image {
-            padding-right: 60px;
+            margin-right: 60px;
 
         }
         .about__title {
-            padding-bottom: 40px;
+            margin-bottom: 40px;
             font-size: 26px;
         }
     }
 
     @media screen and (min-width: $desktop) {
         .about__image {
-            padding-right: 172px;}
+            margin-right: 172px;}
 
         .about__title {
             font-size: 46px;
-            padding-bottom: 80px;
+            margin-bottom: 80px;
         }
     }
 
 .about__title-image {
-font-weight: 800;
 font-size: 20px;
-line-height: 1.3;
 letter-spacing: 0.08em;
-color: #111518;
 padding-bottom: 8px;
-border-bottom: 1px solid #B9B9B9;
+border-bottom: 1px solid var(--primary-text-color);
 }
 
 @media screen and (min-width: $tablet) {
@@ -75,38 +70,42 @@ font-size: 14px;
 line-height: 17px;
 letter-spacing: 0.06em;
 color: var(--second-text-color);
-
-padding-left: 20px;
+padding-left: 30px;
 position: relative;
 }
 
-.about__experience-list:last-child {
-    padding-bottom: 26px;
-}
+// .about__experience-list:last-child {
+//     padding-bottom: 26px;
+// }
 
 .experience-margin {
-    margin: 10px;
+    margin: 20px 0 20px 0;
 }
 
 @media screen and (min-width: $desktop) {
     .experience-margin {
-        margin: 32px;
+        margin: 32px 0 32px 0;
     }
 }
 
 .about__experience {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
+.about__icon {
+    position: absolute;
+    left: 0;
+    height: 14px;
+    top: 25%;
+}
+
+
 .about__experience-list:before{
-    content: '✔';
-    position: absolute; top: 0; left: -10px;
-    color: var(--accent-color);
+background-image: url(/images/Vector.svg);
 }
 
 @media screen and (min-width: $tablet) {
     .about__experience-list {
-    margin: 20px;
     font-size: 12px;}
 }
 
@@ -135,12 +134,12 @@ padding-bottom: 20px;
 font-size: 12px;
 line-height: 1.67;
 text-decoration-line: underline;
-color: #FF6B09;
+color: var(--accent-color);
 }
 
 @media screen and (min-width: $desktop) {
     .education__exile-license {
-       margin-top: 20px;
+    margin-top: 20px;
     }
 }
 
@@ -150,7 +149,7 @@ color: #FF6B09;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
-    color: #B9B9B9;
+    color: var(--primary-text-color);
     }
 
     .exile-padding {
@@ -176,10 +175,11 @@ color: #FF6B09;
         .education__exile:nth-child(5) {
             padding-bottom: 25px;
         }
-
     }
 
 .padding-mobile {
     padding-bottom: 20px;
 }
+
+
 

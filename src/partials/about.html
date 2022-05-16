@@ -1,22 +1,55 @@
-<section class="about section container">
-    <h2 class="about__title">Teacher</h2>
+<section class="about section">
+    <div class="container">
+    <h2 class="title about__title">Teacher</h2>
 <div class="about__main-container">
     <div class="about__image">
-    
-    <img class="about__image-foto padding-mobile" alt="teacher" src="./images/teacher.jpg">
+        <picture>
+            <source 
+            srcset="./images/teacher.webp 1x, ./images/teacher@2x.webp 2x"
+            media="(min-width:1680px)" type="image/webp">
+            <source 
+            srcset="./images/teacher.jpg 1x, ./images/teacher@2x.jpg 2x"
+            media="(min-width:1680px)"
+            />
+            <source 
+            srcset="./images/teacher-tablet.webp 1x, ./images/teacher-tablet@2x.webp 2x"
+            media="(min-width:768px)" type="image/webp">
+            <source 
+            srcset="./images/teacher-tablet.jpg 1x, ./images/teacher-tablet@2x.jpg 2x"
+            media="(min-width:768px)"
+            />
+            <source 
+            srcset="./images/teacher-mobile.webp 1x, ./images/teacher-mobile@2x.webp 2x"
+            media="(max-width:767px)" type="image/webp">
+            <source 
+            srcset="./images/teacher-mobile.jpg 1x, ./images/teacher-mobile@2x.jpg 2x"
+            media="(max-width:767px)"
+            />
+    <img src="./images/teacher.jpg" alt="teacher foto" class="about__image-foto padding-mobile"/>
+    <picture>
 </div>
 <div class="about__content">
-    <h3 class="about__title-image">Elena Moreva</h3>
+    <h3 class="title about__title-image">Elena Moreva</h3>
     <ul class="about__experience">
-        <li class="about__experience-list experience-margin">6 yeards of experience in preparing students for UPE</li>
-        <li class="about__experience-list experience-margin"> Own result of passing VNO - 197 points 2 years in a row</li>
-        <li class="about__experience-list experience-margin">Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English Test)</li>
+        <li class="about__experience-list experience-margin">
+            <svg class="icon-dird about__icon" width=" 20" height="20">
+                <use href="/images/symbol-defs.svg#icon-Line"></use>
+            </svg>6 yeards of experience in preparing students for UPE</li>
+        <li class="about__experience-list experience-margin"><svg class="icon-dird about__icon" width=" 20" height="20">
+            <use href="/images/symbol-defs.svg#icon-Line"></use>
+        </svg>Own result of passing VNO - 197 points 2 years in a row</li>
+        <li class="about__experience-list experience-margin">
+            <svg class="icon-dird about__icon" width=" 20" height="20">
+                <use href="/images/symbol-defs.svg#icon-Line"></use>
+            </svg>Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English Test)</li>
     </ul>
+    
     <p class="education__exile">Graduated from the Institute of International Relations of the NAU with a degree in translator-analyst.</p>
     <p class="education__exile">In spare time takes courses from the best universities in the world on effective teaching and essay writing techniques.</p>
     <p class="education__exile exile-padding">Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).</p>
 
-    <a class="education__exile-license" href="">Cambrige English Entry Level Certificate</a>
+    <a class="education__exile-license" href="https://www.cambridgeenglish.org/exams-and-tests/first/">Cambrige English Entry Level Certificate</a>
+</div>
 </div>
 </div>
 </section>
