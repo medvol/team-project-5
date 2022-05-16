@@ -1,14 +1,21 @@
 .footer__contacts-section {
+    display: flex;
+    flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
     background: var(--third-background-color);
     text-align: center;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        }
 
     @media screen and (min-width:$desktop) {
         padding-top: 86px;
         padding-bottom: 80px;
     }
 }
+
 .footer__copyright-section {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -31,4 +38,37 @@
     font-size: 14px;
     line-height: 2;
     color: var(--primary-text-color);
+}
+
+.contacts-tel {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08
+}
+
+.contacts-list {
+     display: flex;
+     flex-direction: column;
+
+       @media screen and (min-width:$tablet) {
+           flex-direction: row;
+       }
+
+}
+
+.contacts-list__item {
+    @media screen and (min-width:$tablet) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    
+        @media screen and (min-width:$desktop) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+        @media screen and (max-width:$tablet) {
+            margin-top: 21px;
+        }
 }
