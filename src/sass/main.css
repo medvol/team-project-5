@@ -4,15 +4,15 @@
  * Все паршалы подключаются сюда.
  */
 :root {
-  --primary-text-color:#B9B9B9;
+  --primary-text-color: #b9b9b9;
   --second-text-color: #111518;
-  --third-text-color: #FFFFFF;
-  --fourth-text-color: #3D3D3D;
-  --accent-color: #FF6B09;
-  --primary-background-color: #FFFFFF;
+  --third-text-color: #ffffff;
+  --fourth-text-color: #3d3d3d;
+  --accent-color: #ff6b09;
+  --primary-background-color: #ffffff;
   --secondary-background-color: #111518;
-  --third-background-color: #F1F1F1;
-  --background-filter-button: #F5F4FA;
+  --third-background-color: #f1f1f1;
+  --background-filter-button: #f5f4fa;
 }
 
 body {
@@ -188,7 +188,7 @@ img {
   font-size: 12px;
   line-height: 1.67;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: var(--accent-color);
 }
 
