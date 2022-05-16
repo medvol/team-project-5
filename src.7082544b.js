@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"/home/runner/work/team-project-5/team-project-5/src/images/hero-mob-bgi.png":[["hero-mob-bgi.a87c15fe.png","vQQo"],"vQQo"],"/home/runner/work/team-project-5/team-project-5/src/images/hero-mob-bgi@2x.png":[["hero-mob-bgi@2x.d69d4781.png","aCsd"],"aCsd"],"/home/runner/work/team-project-5/team-project-5/src/images/hero-tab-bgi.png":[["hero-tab-bgi.48475295.png","x0B2"],"x0B2"],"/home/runner/work/team-project-5/team-project-5/src/images/hero-tab-bgi@2x.png":[["hero-tab-bgi@2x.cd933b65.png","Svt0"],"Svt0"],"/home/runner/work/team-project-5/team-project-5/src/images/hero-desk-bgi.png":[["hero-desk-bgi.b94fdee9.png","CMeo"],"CMeo"],"/home/runner/work/team-project-5/team-project-5/src/images/hero-desk-bgi@2x.png":[["hero-desk-bgi@2x.3d6b45e8.png","kcZh"],"kcZh"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-5/src.430456b4.js.map
+//# sourceMappingURL=/team-project-5/src.7082544b.js.map
