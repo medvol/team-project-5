@@ -10,6 +10,13 @@
           height: 280px;
           width: 280px;
       }
+
+      .how-do__title_size {
+          font-size: 20px;
+          text-align: center;
+          padding-top: 192px;
+          padding-bottom: 26px;
+      }
   }
   
 
@@ -32,7 +39,7 @@
         }
       }
      
-      &__tittle {
+      &__title {
         position: relative;
         text-align: center;
         font-size: inherit;
@@ -96,6 +103,13 @@
           padding-left: 22px; 
           padding-right: 22px;
         }
+
+        &__title_size {
+            font-size: 26px;
+            text-align: center;
+            padding-top: 169px;
+            padding-bottom: 40px;
+        }
         }
       }
     
@@ -113,19 +127,26 @@
 
         &__card {
         padding-top: 90px;
-        padding-left: 82px;
-        padding-right: 82px;
+        padding-left: 83px;
+        padding-right: 83px;
           height: 492px;
         }
 
-        &__tittle {
+        &__title {
             font-size: 20px;
             line-height: 1.4;
         }
 
         &__description {
       font-size: 18px;
-      line-height: 1.55;
+      line-height: 1.56;
           }
+
+          &__title_size {
+            font-size: 46px;
+            text-align: start;
+            padding-top: 212px;
+            padding-bottom: 80px;
+        }
       }
     }
