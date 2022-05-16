@@ -1,0 +1,23 @@
+.logo{
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  // color: #FF6B09;
+}
+
+.logo__accent{
+  color: var(--accent-color);
+}
+
+.logo__bolt{
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+
+  color: var(--second-text-color);
+}
+
