@@ -46,17 +46,15 @@
         }
 
         &::after {
-          content: '';
-          width: 20px;
-          height: 1px;
-  background-color: var(--accent-color);
+    content: '—';
+  color: var(--accent-color);
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   left: 50%;
   transform: translate(-50%);
 
   .how-do__card:hover & {
-    background-color: var(--third-text-color);
+  color: var(--third-text-color);
 }
         }
       }
