@@ -163,10 +163,6 @@ img {
   margin: 20px 0 20px 0;
 }
 
-.about__experience {
-  margin-bottom: 20px;
-}
-
 .about__icon {
   position: absolute;
   left: 0;
@@ -209,7 +205,35 @@ img {
 }
 
 .padding-mobile {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about__image {
+    margin-right: 60px;
+  }
+  .about__title {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+  .about__title-image {
+    font-size: 26px;
+  }
+  .about__experience-list {
+    font-size: 12px;
+  }
+  .exile-padding {
+    margin-bottom: 24px;
+  }
+  .education__exile {
+    font-size: 10px;
+    line-height: 2;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -242,42 +266,13 @@ img {
   }
   .education__exile-license {
     margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.56;
   }
   .education__exile {
     font-size: 18px;
     line-height: 1.56;
     padding-bottom: 15px;
-  }
-  .education__exile:nth-child(5) {
-    padding-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about__main-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .about__image {
-    margin-right: 60px;
-  }
-  .about__title {
-    margin-bottom: 40px;
-    font-size: 26px;
-  }
-  .about__title-image {
-    font-size: 26px;
-  }
-  .about__experience-list {
-    font-size: 12px;
-  }
-  .exile-padding {
-    margin-bottom: 24px;
-  }
-  .education__exile {
-    font-size: 10px;
-    line-height: 2;
   }
 }
 /*# sourceMappingURL=main.css.map */
