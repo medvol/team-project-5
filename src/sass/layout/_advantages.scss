@@ -1,0 +1,118 @@
+
+.advantages-list__item {
+display: flex;
+align-items: center;
+&:not(:last-child){
+    margin-bottom: 24px;
+}
+}
+.advantages-list__item:nth-child(1)::before {
+    display: block;
+    content: '';
+    background-image: url(/images/icon-female-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.advantages-list__item:nth-child(2)::before {
+    display: block;
+    content: '';
+    background-image: url(/images/icon-mobile-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 59px;
+    height: 60px;
+    margin-right: 12px;
+}
+
+.advantages-list__item:nth-child(3)::before{
+    display: block;
+        content: '';
+        background-image: url(/images/icon-financial-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 59px;
+        height: 60px;
+        margin-right: 12px;
+    }
+        .advantages-list__text {
+            width: 209px;
+            padding-right: 30px;
+            color: var(--second-text-color);
+            font-weight: 700;
+            line-height: 1.65;
+            align-items: center;
+        }
+
+@media screen and (min-width: $tablet) {
+    .section-advantages {
+        padding-bottom: 80px;
+    }
+
+    .advantages-list {
+        display: flex;
+        width: 688px;
+        margin-left: -21px;
+    }
+    .advantages-list__item {
+        flex-basis: calc(100%/3 - 21px);
+        margin-left: 21px;
+        &:not(:last-child){
+    margin-bottom: 0;
+  
+} 
+}   
+    .advantages-list__text {
+    line-height: 1.65;
+        width: 146px;
+    }
+    .advantages-list__item:nth-child(1)::before {
+        margin-right: 10px;
+        }
+    .advantages-list__item:nth-child(2)::before {
+        margin-right: 15px;
+    }
+    .advantages-list__item:nth-child(3)::before {
+        margin-right: 17px;
+    }
+}
+@media screen and (min-width: $desktop){
+    .advantages-list{
+        width: 1569px;
+        margin-left: -112px;
+    }
+    .advantages-list__item{
+        position: relative;
+        flex-basis: calc(100%/3 - 112px);
+        margin-left: 112px;
+    
+}
+    .advantages-list__item:nth-child(1)::before {
+        background-image: url(/images/icon-female.svg);
+        width: 100px;
+        height: 102px;
+        margin: 0;
+        }
+    
+        .advantages-list__item:nth-child(2)::before {
+        background-image: url(/images/icon-mobile.svg);
+        width: 100px;
+        height: 102px;
+        margin: 0;
+        }
+    
+        .advantages-list__item:nth-child(3)::before {
+        background-image: url(/images/icon-financial.svg);
+        width: 100px;
+        height: 102px;
+        margin: 0;
+        }
+    .advantages-list__text {
+    margin-left: -18px;
+    width: 270px;
+    font-size: 20px;
+    }
+}

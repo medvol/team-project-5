@@ -71,7 +71,7 @@ img {
   padding-bottom: 40px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
   .section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -79,13 +79,15 @@ img {
 }
 
 .container {
+
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 310px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -93,17 +95,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 734px;
+    width: 768px;
+
     padding-left: 32px;
     padding-right: 32px;
+
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
   .container {
     width: 1680px;
     padding-left: 16px;
     padding-right: 16px;
+
   }
 }
 
@@ -136,4 +141,6 @@ img {
 .title--white {
   color: var(--third-text-color);
 }
+
+
 /*# sourceMappingURL=main.css.map */
