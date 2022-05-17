@@ -105,7 +105,10 @@
   .about__image {
     margin-right: 60px;
     margin-bottom: 0;
+    min-width: 242px;
+    height: 306px;
   }
+
   .about__title {
     margin-bottom: 40px;
     font-size: 26px;
@@ -136,7 +139,7 @@
 
   .about__image {
     margin-right: 172px;
-    width: 528px;
+    min-width: 528px;
     height: 667px;
   }
 
