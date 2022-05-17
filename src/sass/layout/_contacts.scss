@@ -31,10 +31,6 @@ background-size: cover;
     }
 }
 
-@media screen and (min-width:$desktop) {
-    // padding-top: 80px;
-    // padding-bottom: 80px;
-}
 }
 
 .contacts-container {
@@ -46,6 +42,7 @@ background-size: cover;
 
 .contacts-title {
     font-size: 14px;
+    line-height: 130%;
     text-align: center;
     color: var(--third-text-color);
 
@@ -61,6 +58,8 @@ background-size: cover;
 }
 .contacts-text {
     margin-top: 24px;
+    font-size: 12px;
+    line-height: 1.25;
     color: var(--third-text-color);
 
     @media screen and (min-width:$tablet) {
@@ -101,8 +100,8 @@ background-size: cover;
 
 .subscribe-input {
     height: 48px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 28px;
+    padding-right: 28px;
     background-color: transparent;
     color: var(--third-text-color);
     border: 1px solid var(--third-text-color);
@@ -120,17 +119,18 @@ background-size: cover;
     &:not(:first-child) {
             margin-top: 32px;
         }
+    }
 
-    &::placeholder {
-    font-size: 20px;
-    line-height: 1.2;
-    }
-    }
   &::placeholder {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     color: var(--third-text-color);
+
+    @media screen and (min-width:$desktop)  {
+        font-size: 20px;
+        line-height: 1.2;
+    }
   }
 
   &:focus,
