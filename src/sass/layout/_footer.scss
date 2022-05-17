@@ -100,8 +100,15 @@ background-color: var(--primary-background-color);
     width: 40px; 
     height: 40px;
     background:
-    url(/images/instagram-icon.svg);
+    url(/images/instagram-icon.png);
     background-size: 40px 40px;
+
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        background-image:
+        url(/images/instagram-icon@2x.png);
+    }
 }
 
 
