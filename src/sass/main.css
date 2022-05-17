@@ -11,15 +11,11 @@
   --accent-color: #ff6b09;
   --primary-background-color: #ffffff;
   --secondary-background-color: #111518;
-<<<<<<< Updated upstream
-  --third-background-color: #f1f1f1;
-  --background-filter-button: #f5f4fa;
-=======
   --third-background-color: #F1F1F1;
   --background-filter-button: #F5F4FA;
   --animation: cubic-bezier(0.4, 0, 0.2, 1);
   --time-animation: 250ms;
->>>>>>> Stashed changes
+
 }
 
 body {
@@ -87,8 +83,10 @@ img {
 }
 
 .container {
+
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 @media screen and (min-width: 480px) {
@@ -104,6 +102,7 @@ img {
     width: 768px;
     padding-left: 32px;
     padding-right: 32px;
+
   }
 }
 
@@ -112,6 +111,7 @@ img {
     width: 1680px;
     padding-left: 16px;
     padding-right: 16px;
+
   }
 }
 
@@ -144,6 +144,7 @@ img {
 .title--white {
   color: var(--third-text-color);
 }
+
 
 .nav-list {
   display: none;
@@ -792,9 +793,7 @@ img {
     padding-bottom: 15px;
   }
 }
-<<<<<<< Updated upstream
-/*# sourceMappingURL=main.css.map */
-=======
+
 
 .response {
   padding-left: 20px;
@@ -1112,5 +1111,4 @@ img {
   height: 25px;
   border: none;
 }
-/*# sourceMappingURL=main.css.map */
->>>>>>> Stashed changes
+

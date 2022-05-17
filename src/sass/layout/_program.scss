@@ -1,0 +1,211 @@
+.program {
+    background: var(--secondary-background-color);
+}
+.program__title {
+    margin-bottom: 40px;
+    text-align: center;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.30;
+    letter-spacing: 0.03em;
+    
+    color: var(--third-text-color);
+}
+.program__container {
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        border-left: 1px solid var(--third-text-color);
+        height: 1245px;
+        transform: translate(0, 7px);
+    }
+}
+.program__list {
+    margin-bottom: 40px;
+
+    margin-left: 26px;
+
+    &:last-child {
+        margin-bottom: 105px;
+    }
+}
+.program__list-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 2;
+    text-transform: uppercase;
+    
+    color: var(--third-text-color);
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 7.5px;
+        background-color: var(--accent-color);
+
+        position: absolute;
+        transform: translate(-32px, 7px);
+    }
+}
+.program__catalog {
+    margin-bottom: 4px;
+}
+.program__catalog-title {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 4px;
+    
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.65;
+    
+    color: var(--accent-color);
+
+    &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 1px;
+        margin-right: 5px;
+        background-color: var(--accent-color);
+    }
+}
+.program__catalog-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+    opacity: 0.5;
+}
+.program__image {
+    position: relative;
+    &::before {
+        content: url("../images/program-mobile.png");
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(60px, 0);
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .program__container {
+        justify-content: flex-end;
+
+        &::before {
+            height: 764px;
+            transform: translate(-86px, 7px);
+        }
+    }
+    .program__title {
+        text-align: left;
+        font-size: 26px;
+    }
+    .program__list {
+        &:last-child {
+            margin-bottom: 146px;
+        }
+    }
+    .program__list-title {
+        &::before {
+            transform: translate(-119px, 7px);
+        }
+    }
+    .program__group-list {
+        display: flex;
+    }
+    .program__catalog {
+        width: 152px;
+        margin-right: 32px;
+        margin-bottom: 0;
+
+        &--writing {
+            width: 110px;
+            margin-right: 42px;
+        }
+        &--vocabulary {
+            width: 155px;
+            margin-right: 29px;
+        }
+    }
+    .program__image {
+        &::before {
+            content: url("../images/program-tablet.png");
+            transform: translate(60px, -40px);
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .program__container {
+        display: block;
+        border-top: 1px solid var(--third-text-color); 
+
+        &::before {
+           display: none;
+        }
+    }
+    .program__semester {
+        display: flex;
+        justify-content: center;
+    }
+    .program__title {
+        margin-bottom: 80px;
+        font-size: 46px;
+    }
+    .program__list {
+        margin-right: 40px;
+        margin-bottom: 0;
+        margin-left: 0;
+
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 736px;
+        }
+    }
+    .program__list-title {
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 1.40;
+        margin-top: 48px;
+
+        &--number {
+            font-size: 30px;
+            line-height: 0.93;
+        }
+        &::before {
+            transform: translate(0, -54px);
+        }
+    }
+    .program__group-list {
+        display: block;
+    }
+    .program__catalog {
+        width: 240px;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+    .program__catalog-title {
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    .program__catalog-text {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+    .program__image {
+        &::before {
+            content: url("../images/program.png");
+            transform: translate(-16px, -10px);
+            right: auto;
+        }
+    }
+}
