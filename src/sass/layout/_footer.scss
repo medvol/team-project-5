@@ -1,20 +1,25 @@
 .footer__contacts-section {
+background-color: var(--primary-background-color);
+}
+.footer-container {
     position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: var(--third-background-color);
-    text-align: center;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    
 
     @media screen and (min-width:$tablet) {
+        justify-content: end;
         flex-direction: row;
-        justify-content: center;
+        // padding-right: 32px;
         }
 
     @media screen and (min-width:$desktop) {
-        padding-top: 86px;
-        padding-bottom: 80px;
+        justify-content: center;
+        // padding-top: 86px;
+        // padding-bottom: 80px;
     }
 }
 
@@ -118,7 +123,7 @@
         }
 }
 
-.contact-tel__spun {
+.contact-tel__span {
 @media screen and (min-width:$tablet) {
     padding-left: 16px;
     padding-right: 16px;
