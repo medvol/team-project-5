@@ -71,7 +71,7 @@ img {
   padding-bottom: 40px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
   .section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -79,13 +79,15 @@ img {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 310px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -93,13 +95,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 734px;
+    width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
   .container {
     width: 1680px;
+    padding-left: 16px;
+    padding-right: 16px;
+
   }
 }
 
@@ -133,36 +142,5 @@ img {
   color: var(--third-text-color);
 }
 
-.advantages-container-first::before {
-  position: relative;
-  display: inline-block;
-  content: '';
-  background-image: url(/images/noun-female.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 33px;
-  height: 40px;
-  border: 2px solid var(--accent-color);
-  padding: 10px 13px;
-}
 
-.advantages-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: var(--third-text-color);
-  height: 46px;
-  position: absolute;
-  left: 80px;
-  top: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 65px;
-}
 /*# sourceMappingURL=main.css.map */
