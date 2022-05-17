@@ -11,11 +11,8 @@
           width: 280px;
       }
 
-      .how-do__title_size {
-          font-size: 20px;
-          text-align: center;
-          padding-top: 192px;
-          padding-bottom: 26px;
+      .section__how-do_padding {
+        padding-top: 192px;
       }
   }
   
@@ -83,7 +80,13 @@
         }
       }
     }
-  
+
+    .how-do__title_size {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 26px;
+  }
+
 
     @media screen and (min-width:768px){
       .how-do {
@@ -107,10 +110,11 @@
 
         &__title_size {
             font-size: 26px;
-            text-align: center;
-            padding-top: 169px;
-            padding-bottom: 40px;
         }
+        }
+
+        .section__how-do_padding {
+          padding-top: 169px;
         }
       }
     
@@ -146,8 +150,11 @@
           &__title_size {
             font-size: 46px;
             text-align: start;
-            padding-top: 212px;
-            padding-bottom: 80px;
+            margin-bottom: 80px;
         }
+      }
+
+      .section__how-do_padding {
+        padding-top: 212px;
       }
     }
