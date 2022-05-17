@@ -43,11 +43,12 @@ background-size: cover;
 .contacts-title {
     font-size: 14px;
     line-height: 130%;
+    letter-spacing: 0.08em;
     text-align: center;
     color: var(--third-text-color);
 
     @media screen and (min-width:$tablet) {
-        width: 688px;
+        width: 640px;
         font-size: 26px;
     }
 
@@ -60,6 +61,7 @@ background-size: cover;
     margin-top: 24px;
     font-size: 12px;
     line-height: 1.25;
+    letter-spacing: 0.08em;
     color: var(--third-text-color);
 
     @media screen and (min-width:$tablet) {
@@ -70,7 +72,7 @@ background-size: cover;
         }
     
     @media screen and (min-width:$desktop) {
-        width: 1090px;
+        width: 100%;
            font-size: 30px;
            line-height: 1.23;
         }
