@@ -1,3 +1,8 @@
+.about {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .about__title {
   font-size: 20px;
   margin-bottom: 20px;
@@ -8,20 +13,16 @@
   letter-spacing: 0.08em;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--primary-text-color);
+  margin-bottom: 20px;
 }
 
 .about__experience-list {
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
-  padding-left: 30px;
-  position: relative;
-}
-
-.experience-margin {
-  margin: 20px 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .about__icon {
@@ -44,9 +45,28 @@
   background-color: var(--accent-color);
 }
 
-.about__experience {
-  padding-bottom: 20px;
+.about__experience-list::before {
+  content: '';
+  display: block;
+  min-width: 17px;
+  height: 14px;
+  background-image: url(/images/Vector-mobile.svg);
+  background-repeat: no-repeat;
+  margin-right: 9px;
 }
+
+.about__experience-list {
+  display: flex;
+}
+
+.about__experience-list:last-child {
+  align-items: center;
+}
+
+.about__experience {
+  padding-bottom: 12px;
+}
+
 .education__exile-license {
   font-weight: 500;
   font-size: 12px;
@@ -71,6 +91,12 @@
   margin-bottom: 20px;
 }
 
+.about__image {
+  width: 242px;
+  height: 306px;
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: $tablet) {
   .about__main-container {
     display: flex;
@@ -78,6 +104,7 @@
 
   .about__image {
     margin-right: 60px;
+    margin-bottom: 0;
   }
   .about__title {
     margin-bottom: 40px;
@@ -109,6 +136,8 @@
 
   .about__image {
     margin-right: 172px;
+    width: 528px;
+    height: 667px;
   }
 
   .about__title {
@@ -125,16 +154,14 @@
     line-height: 1.23;
     letter-spacing: 0.08em;
     padding-bottom: 16px;
-  }
-
-  .experience-margin {
-    margin: 32px 0 32px 0;
+    margin-bottom: 32px;
   }
 
   .about__experience-list {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.06em;
+    margin-bottom: 32px;
   }
 
   .education__exile-license {
@@ -146,6 +173,20 @@
   .education__exile {
     font-size: 18px;
     line-height: 1.56;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .about__experience-list::before {
+    content: '';
+    display: block;
+    min-width: 24px;
+    height: 20px;
+    background-image: url(/images/Vector-desktop.svg);
+    background-repeat: no-repeat;
+    margin-right: 35px;
+  }
+
+  .exile-padding {
+    margin-bottom: 20px;
   }
 }
