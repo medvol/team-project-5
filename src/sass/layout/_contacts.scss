@@ -1,0 +1,176 @@
+.contacts-section {
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: var(--secondary-background-color);
+text-align: center;
+
+background-image: 
+ url(/images/contact-mobile.png);
+background-repeat: no-repeat;
+background-position: center; 
+background-size: cover;
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(/images/contact-mobile@2x.png);
+    }
+
+
+@media screen and (min-width:$tablet) {
+
+        background-image:
+        url(/images/contact-tablet.png);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        background-image:
+        url(/images/contact-tablet@2x.png);
+    }
+}
+
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-title {
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--third-text-color);
+
+    @media screen and (min-width:$tablet) {
+        width: 640px;
+        font-size: 26px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 1090px;
+        font-size: 46px;
+    }
+}
+.contacts-text {
+    margin-top: 24px;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    color: var(--third-text-color);
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 40px;
+        width: 452px;
+            font-size: 14px;
+            line-height: 1.21;
+        }
+    
+    @media screen and (min-width:$desktop) {
+        width: 100%;
+           font-size: 30px;
+           line-height: 1.23;
+        }
+}
+.contacts-span { 
+    color: var(--accent-color)
+}
+
+.contacts__subscribe-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width:$mobile) {
+    width: 280px;
+    }
+    @media screen and (min-width:$tablet) {
+        margin-top: 24px;
+    width: 336px;
+    }
+    @media screen and (min-width:$desktop) {
+        margin-top: 60px;
+    width: 528px;
+    }
+}
+
+.subscribe-input {
+    height: 48px;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: transparent;
+    color: var(--third-text-color);
+    border: 1px solid var(--third-text-color);
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+    
+    @media screen and (min-width:$tablet) {
+    padding-left: 24px;
+    padding-right: 24px;
+    }
+    
+    @media screen and (min-width:$desktop) {
+    height: 70px;
+    &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--third-text-color);
+
+    @media screen and (min-width:$desktop)  {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid var(--accent-color);
+
+  }
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+      border: 2px solid red;
+  }
+}
+
+.subscribe__button {
+    height: 48px;
+    color: var(--third-text-color);
+    background: var(--accent-color);
+    text-transform: uppercase;
+    margin-top: 40px;
+    border: none;
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 32px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        height: 70px;
+        margin-top: 40px;
+    }
+
+        transition: background-color var(--time-animation) var(--animation),
+        box-shadow var(--time-animation) var(--animation);
+    
+    &:hover,
+    &:focus {
+        background-color: #ec640a;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+}
