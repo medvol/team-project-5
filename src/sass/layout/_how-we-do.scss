@@ -7,8 +7,7 @@
       .how-do__card {
         margin-left: auto;
         margin-right: auto;
-          height: 280px;
-          width: 280px;
+        min-height: 280px;
       }
 
       .section__how-do_padding {
@@ -29,6 +28,7 @@
         padding-top: 32px;
         padding-right: 10px;
         padding-left: 10px;
+        padding-bottom: 32px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -50,8 +50,10 @@
         color: var(--second-text-color);
         line-height: 1.42;
         margin-bottom: 40px;
+        letter-spacing: 0.08em;
 
-        .how-do__card:hover & {
+        .how-do__card:hover &,
+        .how-do__card:focus & {
             color: var(--third-text-color);
         }
 
@@ -63,24 +65,32 @@
   left: 50%;
   transform: translate(-50%);
 
-  .how-do__card:hover & {
+  .how-do__card:hover &,
+  .how-do__card:focus & {
   color: var(--third-text-color);
 }
         }
       }
 
       &__description {
-  font-weight: 500;
+  color: var(--primary-text-color);
   font-size: 12px;
   line-height: 1.66;
   text-align: center;
+  letter-spacing: 0.08em;
+
+  .how-do__card:hover &,
+  .how-do__card:focus & {
+  color: var(--third-text-color);
+}
       }
       
       &__icon {
         fill: var(--accent-color);
         margin-bottom: 20px;
 
-        .how-do__card:hover & {
+        .how-do__card:hover &,
+        .how-do__card:focus & {
             fill: var(--third-text-color);
         }
       }
@@ -107,10 +117,9 @@
         }
 
         &__card {
-          height: 336px;
-          padding-top: 40px;
-          padding-left: 22px; 
-          padding-right: 22px;
+          min-height: 336px;
+          height: 100%;
+          padding: 40px 22px;
         }
 
         &__title_size {
@@ -136,10 +145,8 @@
         }
 
         &__card {
-        padding-top: 90px;
-        padding-left: 83px;
-        padding-right: 83px;
-          height: 492px;
+        padding: 90px 80px;
+        min-height: 492px;
         }
 
         &__title {
@@ -148,8 +155,9 @@
         }
 
         &__description {
-      font-size: 18px;
-      line-height: 1.56;
+          font-size: 18px;
+          line-height: 1.55;
+          text-align: center;
           }
 
           &__title_size {
