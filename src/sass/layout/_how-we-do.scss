@@ -7,6 +7,7 @@
       .how-do__card {
         margin-left: auto;
         margin-right: auto;
+        min-height: 280px;
       }
 
       .section__how-do_padding {
@@ -44,6 +45,7 @@
         color: var(--second-text-color);
         line-height: 1.42;
         margin-bottom: 40px;
+        letter-spacing: 0.08em;
 
         .how-do__card:hover &,
         .how-do__card:focus & {
@@ -67,10 +69,10 @@
 
       &__description {
   color: var(--primary-text-color);
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.66;
   text-align: center;
+  letter-spacing: 0.08em;
 
   .how-do__card:hover &,
   .how-do__card:focus & {
@@ -110,11 +112,9 @@
         }
 
         &__card {
+          min-height: 336px;
           height: 100%;
           padding: 40px 22px;
-          // padding-left: 22px; 
-          // padding-right: 22px;
-          // padding-bottom: 40px;
         }
 
         &__title_size {
@@ -140,10 +140,8 @@
         }
 
         &__card {
-        // padding-top: 90px;
-        // padding-left: 83px;
-        // padding-right: 83px;
-        padding: 90px 83px;
+        padding: 90px 80px;
+        min-height: 492px;
         }
 
         &__title {
@@ -152,8 +150,9 @@
         }
 
         &__description {
-      font-size: 18px;
-      line-height: 1.56;
+          font-size: 18px;
+          line-height: 1.55;
+          text-align: center;
           }
 
           &__title_size {
