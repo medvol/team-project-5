@@ -13,6 +13,11 @@
 
       .section__how-do_padding {
         padding-top: 40px;
+
+        @media screen and (min-width: $desktop) {
+          padding-top: 80px;
+          
+        }
       }
   }
   

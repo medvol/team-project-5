@@ -1,19 +1,38 @@
 
-// .benefits__section {
-//     position: absolute;
-//     top: 5097px;
-// }
+.benefits__section {
+    padding-top: 40px;
+            
+        background-image: linear-gradient(to bottom, var(--secondary-background-color) 60%, #ffffff 60%);
+    
+        @media screen and (min-width: $tablet) {
+            padding-top: 80px;
+            // height: 532px;
+          
+            background-image: linear-gradient(to bottom, var(--secondary-background-color) 46%, #ffffff 46%) ;
+    
+        }
+    
+        @media screen and (min-width: $desktop) {
+            padding-top: 0;
+            height: 382px;
+            background-image: linear-gradient(to bottom, var(--secondary-background-color) 47%, #ffffff 47%);
+            
+        }
+}
 
 .benefits__title {
-    font-size: 20px;
     margin-bottom: 32px;
     max-width: 180px;
+
+    font-size: 20px;
+    line-height: 1.36;
+   
 }
 
 .benefits__list {
     padding: 20px 24px 20px 20px;
     font-weight: 700;
-    line-height: 1.64;
+    line-height: 1.43;
     color: var(--second-text-color);
     background-color: var(--primary-background-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -26,10 +45,12 @@
     content: "— 0" counter(text);
     display: block;
     margin-bottom: 8px;
+    line-height: 1.65;
     color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
+    
 
     .benefits__item:not(:last-child) {
         margin-bottom: 40px;
@@ -38,9 +59,9 @@
 
 @media screen and (min-width: $tablet) {
 
-    // .benefits__section {
-    //     top: 3570px;
-    // }
+    .benefits__section {
+            padding-top: 0;
+    }
 
     .benefits__title {
         min-width: 100%;
@@ -64,7 +85,7 @@
     }
 
     .benefits__text::before {
-        line-height: 1.64;
+        line-height: 1.65;
     }
 
     .benefits__text {
@@ -73,10 +94,6 @@
 }
 
 @media screen and (min-width: $desktop) {
-
-    // .benefits__section {
-    //     top: 4139px;
-    // }
 
     .benefits__title {
         display: none;
@@ -91,6 +108,11 @@
 
     .benefits__item {
         flex-basis: calc(100% / 3 - 204px);
+    }
+
+    .benefits__text::before {
+        font-size: 20px;
+             
     }
 
     .benefits__text {

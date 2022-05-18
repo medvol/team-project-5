@@ -16,25 +16,9 @@
   margin-bottom: 20px;
 }
 
-.about__experience-list {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  letter-spacing: 0.06em;
-  color: var(--second-text-color);
-  margin-bottom: 20px;
+.about__experience {
+  padding-bottom: 12px;
 }
-
-.about__icon {
-  position: absolute;
-  left: 0;
-  height: 14px;
-  top: 25%;
-}
-
-// .about__experience-list::after {
-//   background-image: url(/images/Vector.svg);
-// }
 
 .about__experience::after {
   content: '';
@@ -43,6 +27,16 @@
   width: 20px;
   position: absolute;
   background-color: var(--accent-color);
+}
+
+.about__experience-list {
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: var(--second-text-color);
+  margin-bottom: 20px;
 }
 
 .about__experience-list::before {
@@ -55,16 +49,15 @@
   margin-right: 9px;
 }
 
-.about__experience-list {
-  display: flex;
-}
-
 .about__experience-list:last-child {
   align-items: center;
 }
 
-.about__experience {
-  padding-bottom: 12px;
+.about__icon {
+  position: absolute;
+  left: 0;
+  height: 14px;
+  top: 25%;
 }
 
 .education__exile-license {

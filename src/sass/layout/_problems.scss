@@ -2,16 +2,17 @@
     padding-top: 24px;
     padding-bottom: 0;
 
-    background-image: linear-gradient(to bottom, #000000 67%, #ffffff 33%);
+    background-image: linear-gradient(to bottom, var(--secondary-background-color) 67%, #ffffff 67%);
 
     @media screen and (min-width: $tablet) {
         padding-top: 40px;
+        
         
     }
         
             @media screen and (min-width: $desktop) {
                 padding-top: 80px;
-                background-image: url(/images/noun_campfir.svg), linear-gradient(to bottom, #000000 67%, #ffffff 33%);
+                background-image: url(/images/noun_campfir.svg), linear-gradient(to bottom, var(--secondary-background-color) 67%, #ffffff 67%);
                 background-repeat: no-repeat;
                 background-position-x: right;
                 background-position-y: 33%;
