@@ -12,6 +12,7 @@ background-color: var(--primary-background-color);
 
     @media screen and (min-width:$tablet) {
         justify-content: end;
+        
         flex-direction: row;
         // padding-right: 32px;
         }
@@ -125,7 +126,7 @@ background-color: var(--primary-background-color);
 }
 
 .contacts-list__item {
-        @media screen and (max-width:$tablet) {
+        @media screen and (max-width: 767px) {
             margin-top: 21px;
         }
 }
