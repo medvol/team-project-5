@@ -1,10 +1,11 @@
 .hero{
  
-  padding-top: 90px;
+  padding-top: 40px;
   padding-bottom: 100px;
   background-image: url(/images/hero/hero-background-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
+      background-position: 90% 87%;
   
 }
 
@@ -75,7 +76,7 @@
 
 @media screen and (min-width: $tablet){
   .hero {
-    padding-top: 169px;
+    padding-top: 80px;
     padding-bottom: 84px;
     background-image: url(/images/hero/hero-background-tablet.png);
   }
@@ -114,7 +115,7 @@
 
 @media screen and (min-width: $desktop){
   .hero {
-    padding-top: 150px;
+    padding-top: 40px;
     padding-bottom: 46px;
     background-image: url(/images/hero/hero-background-desktop.png);
   }
