@@ -1,12 +1,35 @@
 .program {
     background: var(--secondary-background-color);
-    padding-bottom: 45px;
     max-width: 1680px;
     margin-left: auto;
     margin-right: auto;
-   
-   
+}
+.program-container {
+    padding-left: auto;
+    padding-right: auto;
+    position: relative;
+
+    &::after {
+        position: absolute;
     
+        content: '';
+        display: block;
+        width: 150px;
+        height: 137px;
+        right: 0;
+        bottom: 0;
+        background-color: var(--hero-background-color);
+        background-image: url(/images/program/program-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(/images/program/program-mobile@2x.png);
+        }
+    }
 }
 .program__title {
     margin-bottom: 40px;
@@ -19,66 +42,52 @@
     
     color: var(--third-text-color);
 }
-
-.program__semester {
-    // margin-bottom: 105px;
-    padding-right: 69px;
-    padding-left: 36px;
-
-    @media screen and (min-width: $desktop) {
-            border-top: 1px solid #FFFFFF;
-    
-        }
-
-    }
-
+.program__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .program__list {
     position: relative;
-    padding-left: 20px;
+    padding-left: 26px;
+    width: 190px;
+
+    &:not(:last-child) {
+        padding-bottom: 40px;
+        border-left: 1px solid var(--third-text-color);
+    }
+    &:last-child {
+        margin-bottom: 105px;
+    }
+    &::before {
+        position: absolute;
+        left: 0;
+        transform: translate(-60%);
     
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 7.5px;
+
+        background-color: var(--accent-color);
+    }
 }
-
-.program__list:not(:last-child) {
-   padding-bottom: 40px;
-   border-left: 1px solid var(--third-text-color);
-
-   
-}
-
-.program__list:last-child{
-    margin-bottom: 105px;
-}
-
-.program__list::before {
-    position: absolute;
-    left: 0;
-    
-    transform: translate(-50%);
-     
-            content: "";
-            display: block;
-            width: 12px;
-            height: 12px;
-            margin-right: 20px;
-                      
-            border-radius: 7.5px;
-            background-color: var(--accent-color);
-            
-}
-
 .program__list-title {
     margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1;
     text-transform: uppercase;
     
     color: var(--third-text-color);
 
 }
 .program__catalog {
-    margin-bottom: 4px;
+    &:not(:last-child) {
+        margin-bottom: 4px;
+    }
 }
 .program__catalog-title {
     display: flex;
@@ -96,8 +105,8 @@
         content: "";
         display: inline-block;
         vertical-align: middle;
-        width: 12px;
-        height: 1px;
+        width: 14px;
+        height: 2px;
         margin-right: 5px;
         background-color: var(--accent-color);
     }
@@ -109,61 +118,45 @@
     opacity: 0.5;
 }
 
+@media screen and (min-width: $tablet) {
 
-.program-container {
-    position: relative;
-}
- .program-container::after {
-     position: absolute;
-     
-     content: '';
-     display: block;
-     width: 150px;
-     height: 137px;
-     right: 0;
-     bottom: -105px;
-        background-color: var(--hero-background-color);
-            background-image: url(/images/program/program-mobile.png);
+    .program-container {
+        &::after {
+            position: absolute;
+
+            content: '';
+            display: block;
+            width: 368px;
+            height: 268px;
+            right: 0;
+            bottom: 40px;
+
+            background-color: var(--hero-background-color);
+            background-image: url(/images/program/program-tablet.png);
             background-size: cover;
             background-repeat: no-repeat;
             text-align: center;
-        
+
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(/images/program/program-mobile@2x.png);
+                background-image: url(/images/program/program-tablet@2x.png);
             }
-     
-
- }
-
-@media screen and (min-width: $tablet) {
-    
-    .program__container {
-        justify-content: flex-end;
-
-        &::before {
-            height: 764px;
-            transform: translate(-86px, 7px);
         }
     }
     .program__title {
         text-align: left;
         font-size: 26px;
+        margin-top: 20px;
     }
-    // .program__list {
-    //     &:last-child {
-    //         margin-bottom: 146px;
-    //     }
-    // }
-
-        .program__list:last-child {
-            margin-bottom: 105px;
-        }
-        
-    .program__list-title {
-        &::before {
-            transform: translate(-119px, 7px);
+    .program__group {
+        padding-left: 71px;
+    }
+    .program__list {
+        padding-left: 113px;
+        width: 100%;
+        &:last-child {
+            margin-bottom: 160px;
         }
     }
     .program__group-list {
@@ -171,89 +164,81 @@
     }
     .program__catalog {
         width: 152px;
-        margin-right: 32px;
-        margin-bottom: 0;
+        
+        &:not(:last-child) {
+            margin-right: 32px;
+            margin-bottom: 0;
+        }
 
         &--writing {
             width: 110px;
-            margin-right: 42px;
         }
         &--vocabulary {
             width: 155px;
-            margin-right: 29px;
+                
+            &:not(:last-child) {
+                margin-right: 29px;       
+            }
         }
     }
-    
-
-         .program-container::after {
-             position: absolute;
-    
-             content: '';
-             display: block;
-             width: 368px;
-             height: 268px;
-             right: 0;
-             bottom: -45px;
-           
-             background-color: var(--hero-background-color);
-             background-image: url(/images/program/program-tablet.png);
-             background-size: cover;
-             background-repeat: no-repeat;
-             text-align: center;
-    
-             @media (min-device-pixel-ratio: 2),
-             (min-resolution: 192dpi),
-             (min-resolution: 2dppx) {
-                 background-image: url(/images/program/program-tablet@2x.png);
-             }
-    
-    
-         }
 }
 
 @media screen and (min-width: $desktop) {
-    .program__container {
-        display: block;
-        border-top: 1px solid var(--third-text-color); 
 
-        &::before {
-           display: none;
-        }
-    }
-    .program__semester {
-        display: flex;
-        justify-content: center;
-    }
     .program__title {
-        margin-bottom: 80px;
+        margin-bottom: 88px;
+        margin-top: 0;
+
         font-size: 46px;
     }
+    .program__group {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 48px;
+        padding-left: 140px;
+
+        border-top: 1px solid #FFFFFF;
+    }
     .program__list {
+        padding-left: 0;
+        
         margin-right: 40px;
         margin-bottom: 0;
         margin-left: 0;
 
+        &:not(:last-child) {
+            padding-bottom: 0;
+            border-left: none;
+        }
         &:last-child {
             margin-right: 0;
-            margin-bottom: 736px;
+            margin-bottom: 537px;
+        }
+        &::before {
+            display: none;
         }
     }
-.program__list:not(:last-child) {
-    border-left: none;
-}
-
     .program__list-title {
         margin-bottom: 24px;
         font-size: 20px;
         line-height: 1.40;
-        margin-top: 48px;
-
+        
         &--number {
             font-size: 30px;
             line-height: 0.93;
         }
         &::before {
-            transform: translate(0, -54px);
+            position: absolute;
+
+            content: "";
+            display: block;
+            transform: translate(0, -56px);
+            width: 17px;
+            height: 16px;
+
+            border-radius: 7.5px;
+            background-color: var(--accent-color);
         }
     }
     .program__group-list {
@@ -261,8 +246,10 @@
     }
     .program__catalog {
         width: 240px;
-        margin-bottom: 24px;
-        margin-right: 0;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            margin-right: 0;
+        }
     }
     .program__catalog-title {
         margin-bottom: 8px;
@@ -271,34 +258,9 @@
     .program__catalog-text {
         font-size: 18px;
         line-height: 1.56;
-    }
-
+    } 
     .program-container {
-        width: 100%;
-    }
-
- .program__list-title::before {
-            position: absolute;
-            left: 17px;
-       
-            content: "";
-            display: block;
-            width: 17px;
-            height: 16px;
-            
-    
-            border-radius: 7.5px;
-            background-color: var(--accent-color);
-    
-        }
-
-        .program__list::before {
-                  
-           display: none;
-                    
-                }
-
-        .program-container::after {
+        &::after {
             position: absolute;
     
             content: '';
@@ -306,7 +268,7 @@
             width: 684px;
             height: 381px;
             left: 0;
-            bottom: -45px;
+            bottom: -80px;
     
             background-color: var(--hero-background-color);
             background-image:  url(/images/program/program-desktop.png);
@@ -315,20 +277,10 @@
             text-align: center;
     
             @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
                 background-image:  url(/images/program/program-desktop@2x.png);
             }
-    
-    
         }
-
-   
-    // .program__image {
-    //     &::before {
-    //         content: url("../images/program.png");
-    //         transform: translate(-16px, -10px);
-    //         right: auto;
-    //     }
-    // }
+    }
 }
