@@ -5,8 +5,12 @@
 .advantages-list__item {
 display: flex;
 align-items: center;
+transition: transform 250ms linear;
 &:not(:last-child){
     margin-bottom: 24px;
+}
+&:hover {
+    transform: scale(1.10);
 }
 }
 .advantages-list__item:nth-child(1)::before {
@@ -41,6 +45,7 @@ align-items: center;
         height: 60px;
         margin-right: 12px;
     }
+    
 .advantages-list__text {
         width: 209px;
         padding-right: 30px;
