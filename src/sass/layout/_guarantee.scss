@@ -1,7 +1,7 @@
-.container-mobile {
-    padding: 0;
-}
 
+.section-guarantee .container{
+background-color: var(--third-background-color);
+}
 .section-guarantee__title {
     text-align: center;
     font-size: 26px;
@@ -9,12 +9,12 @@
 }
 
 .guarantee-list {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 27px;
     padding-right: 20px;
-    background-color: var(--third-background-color);
-
+    ;
 }
 
 .guarantee-list__item {
@@ -38,7 +38,7 @@
 }
 
 .guarantee-list__text {
-    padding-left: 28px;
+    margin-left: 28px;
     color: var(--fourth-text-color);
     font-size: 12px;
     line-height: 1.67;
@@ -50,11 +50,14 @@
 }
 
 @media screen and (min-width:$tablet) {
-   
+.section-guarantee .container {
+        background-color: var(--third-text-color);
+    }
     .guarantee-list {
         padding-top: 32px;
         padding-right: 32px;
         padding-left: 94px;
+        background-color: var(--third-background-color)
     }
 
     .guarantee-list__item:not(:last-child) {
@@ -85,6 +88,7 @@
 
     .guarantee-list__item:not(:last-child) {
         margin-bottom: 6px;
+        padding-bottom: 14px
     }
 
     .guarantee-list__item::before {
@@ -93,7 +97,7 @@
     }
 
     .guarantee-list__text {
-        padding-left: 30px;
+        margin-left: 30px;
         font-size: 20px;
         line-height: 1.4;
     }
