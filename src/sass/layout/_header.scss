@@ -247,8 +247,8 @@
     margin-right: auto;
   }
 
-  .icon-logo-dark-mobile:hover,
-  .icon-logo-dark-mobile:focus {
+  .logo__icon-dark-mobile:hover,
+  .logo__icon-dark-mobile:focus {
     animation: changeColorLogo 1000ms linear 500ms forwards, rotateLogo 1500ms linear;
   }
   
