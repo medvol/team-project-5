@@ -1,70 +1,55 @@
 .footer__contacts-section {
-    max-width: 1680px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--primary-background-color);
+    padding-bottom: 0px;
 }
-.footer-container {
-    position: relative;
+.footer-wrapper {
+   
     display: flex;
     align-items: center;
-    flex-direction: column;
-    // padding-top: 40px;
-    // padding-bottom: 40px;
-    
+    flex-direction: column;    
+    padding-bottom: 40px;    
 
     @media screen and (min-width:$tablet) {
-        justify-content: end;
-        
+        justify-content: space-between;        
         flex-direction: row;
-        // padding-right: 32px;
+       
         }
 
     @media screen and (min-width:$desktop) {
+        position: relative;
         justify-content: center;
-        // padding-top: 86px;
-        // padding-bottom: 80px;
+     
     }
 }
 
 .footer-logo {  
-    @media screen and (min-width:$tablet) {
-            position: absolute;
-            left: 32px;
-        }
+    margin-right: 0;
+    @media screen and (min-width:$desktop) {
+        position: absolute;
+                left: 0;
     
-        @media screen and (min-width:$desktop) {
-            left: 16px;
         }
+  
 }
 
-.footer__copyright-section {
+.copyright-section__text {
     padding-top: 24px;
     padding-bottom: 24px;
     background: var(--secondary-background-color);
     text-align: center;
-
-    @media screen and (min-width:$tablet) {
-        padding-top: 25px;
-        padding-bottom: 24px;
-        }
-
-    @media screen and (min-width:$desktop) {
-        padding-top: 26px;
-        padding-bottom: 27px;
-    }
-}
-
-.copyright-section__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
     color: var(--primary-text-color);
+
+        @media screen and (min-width:$desktop) {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
 }
 
 .contacts-tel {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -124,6 +109,7 @@
 
        @media screen and (min-width:$tablet) {
            flex-direction: row;
+       
        }
 
 }
