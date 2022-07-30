@@ -5,7 +5,7 @@
   background-image: url(/images/hero/hero-background-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
-      background-position: 90% 87%;
+  background-position: 90% 87%;
   
 }
 
@@ -68,10 +68,10 @@
 }
 
 .hero__right-side {
-  width: 208px;
-  
+  width: 208px; 
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 @media screen and (min-width: $tablet){
